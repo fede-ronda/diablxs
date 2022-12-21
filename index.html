@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+
+
+
     <title>Marca</title>
 </head>
 
 <body>
-    <!------------- HEADER ------------->
+    <!------------------------------ HEADER ------------------------------>
 
     <header>
         <div class="header-container">
@@ -34,15 +39,67 @@
         </div>
     </header>
 
-    <!-------------- MAIN -------------->
+    <!----------------------------- MAIN -------------------------------->
 
     <main class="main-inicio">
         <div class="titulo-verano">
             <h3>VERANO 2023</h3>
             <hr>
         </div>
-        
+        <!----------------- INICIO CARRUSEL VERANO 2023 --------------------->
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="productos-carrusel">
+                        <article class="tarjeta-carrusel">
+                            <img src="./img/remera-negra.png" alt="...">
+                            <h3>Remera Negra</h3>
+                            <span>$1.999</span>
+                            <a href="" class="btn-comprar">Comprar</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="productos-carrusel">
+                        <article class="tarjeta-carrusel">
+                            <img src="./img/remera-negra.png" alt="...">
+                            <h3>Remera Negra</h3>
+                            <span>$1.999</span>
+                            <a href="" class="btn-comprar">Comprar</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="productos-carrusel">
+                        <article class="tarjeta-carrusel">
+                            <img src="./img/remera-negra.png" alt="...">
+                            <h3>Remera Negra</h3>
+                            <span>$1.999</span>
+                            <a href="" class="btn-comprar">Comprar</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <!-------------------- INICIO TARJETA PRODUCTOS --------------------->
+
+        <div class="titulo-productos-inicio">
+            <h4>PRODUCTOS</h4>
+            <hr>
+        </div>
+
         <section class="productos-inicio">
             <div class="productos-inicio-verano">
                 <article class="tarjeta-productos-verano">
@@ -61,15 +118,56 @@
                     <a href="" class="btn-comprar">Comprar</a>
                 </article>
             </div>
+
+            <div class="productos-inicio-verano">
+                <article class="tarjeta-productos-verano">
+                    <img src="./img/remera-negra.png" alt="">
+                    <h3>Remera Negra L</h3>
+                    <span>$1.999</span>
+                    <a href="" class="btn-comprar">Comprar</a>
+                </article>
+            </div>
+
+            <div class="productos-inicio-verano">
+                <article class="tarjeta-productos-verano">
+                    <img src="./img/remera-negra.png" alt="">
+                    <h3>Remera Negra L</h3>
+                    <span>$1.999</span>
+                    <a href="" class="btn-comprar">Comprar</a>
+                </article>
+            </div>
         </section>
+
+
+
     </main>
 
-    <!-------------- FOOTER ---------------->
+
+
+    <!----------------------------- FOOTER ---------------------------->
 
     <footer>
+        <!--------------------- INICIO AVISO DE CUOTAS -------------------->
 
+        <section class="aviso-promociones-inicio">
+            <div class="aviso-promociones-1">
+                <a href="./pages/promociones.html">
+                    <h4>3 cuotas sin interés</h4>
+                    <span>en todas tus compras</span>
+                </a>
+            </div>
+            <div class="aviso-promociones-2">
+                <a href="./pages/promociones.html">
+                    <h4>6 cuotas sin interés</h4>
+                    <span>en compras superiores a $15.000</span>
+                </a>
+            </div>
+        </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

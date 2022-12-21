@@ -60,20 +60,21 @@ a {
 
 }
 
-.nav-sections, a {
+.nav-sections a {
     color: #403D39;
     border: 2px solid transparent;
 }
 
 .nav-sections a:hover {
-    color: #403D39;
+    color: #EB5E28;
     border-bottom: 2px solid #EB5E28;
     
 }
 
+
 /* ------------ MAIN -------------------- */
 
-.main-inicio {
+/* .main-inicio {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
@@ -82,15 +83,14 @@ a {
     "titulo"
     "producto"
     ;
-}
+} */
 
 .titulo-verano {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
-    grid-area: titulo; 
+    padding: 20px 0px; 
 
 }
 
@@ -103,7 +103,53 @@ a {
     width: 80%;
 }
 
-/* ----------------------- TARJETAS PRODUCTOS INICIO VERANO 2023 ------------------ */
+/* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
+
+
+
+.tarjeta-carrusel{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+    
+}
+
+.tarjeta-carrusel img{
+    width: 250px;
+
+}
+
+.tarjeta-carrusel h3{
+    font-size: 28px;
+}
+
+.tarjeta-carrusel span{
+    font-size: 22px;
+}
+
+
+
+/* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
+
+.titulo-productos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.titulo-productos-inicio h3 {
+    font-size: 25px;
+}
+
+.titulo-productos-inicio hr {
+    margin-top: 20px;
+    width: 80%;
+}
 
 .productos-inicio {
     display: flex;
@@ -138,6 +184,46 @@ a {
 .tarjeta-productos-verano h3, .tarjeta-producto span{
     font-size: 16px;
     padding: 5px;
+}
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+
+.aviso-promociones-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+
+}
+
+.aviso-promociones-inicio a {
+    color: #FFFCF2;
+}
+
+
+.aviso-promociones-inicio h4 {
+    font-size: 32px;
+}
+
+.aviso-promociones-inicio span {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.aviso-promociones-1, .aviso-promociones-2 {
+    padding: 10px;
+    background-color: #252422;
+    border-radius: 10px;
+}
+
+.aviso-promociones-1:hover, .aviso-promociones-2:hover {
+    padding: 0px 5px;
+    background-color: #EB5E28;
+    border-radius: 10px;
 }
 
 @media (min-width: 480px) {
