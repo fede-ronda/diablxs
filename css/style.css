@@ -1,0 +1,180 @@
+/* PALETAS DE COLORES
+
+BLANCO: #FFFCF2
+GRIS: #CCC5B9
+GRIS OSCURO: #403D39
+NEGRO: #252422
+NARANJA: #EB5E28
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* outline: 1px solid red; */
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----------BOTONES----------- */
+
+.btn-comprar{
+    background-color: #252422;
+    padding: 5px 5px;
+    border-radius: 2px;
+    color: #FFFCF2;
+    margin-bottom: 20px;
+
+}
+
+.btn-comprar:hover {
+    background-color: #EB5E28;
+}
+
+
+/* ---------- HEADER ---------- */
+.header-container{
+    background-color: #252422;
+    text-align: center;
+}
+
+.header-container, h1 {
+    color: #FFFCF2;
+}
+
+/* .nav-container{
+    
+} */
+
+.nav-sections, li {
+    display: block;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.nav-sections, a {
+    color: #403D39;
+    border: 2px solid transparent;
+}
+
+.nav-sections a:hover {
+    color: #403D39;
+    border-bottom: 2px solid #EB5E28;
+    
+}
+
+/* ------------ MAIN -------------------- */
+
+.main-inicio {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    grid-template-areas:
+    
+    "titulo"
+    "producto"
+    ;
+}
+
+.titulo-verano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    grid-area: titulo; 
+
+}
+
+.titulo-verano h3 {
+    font-size: 25px;
+}
+
+.titulo-verano hr {
+    margin-top: 20px;
+    width: 80%;
+}
+
+/* ----------------------- TARJETAS PRODUCTOS INICIO VERANO 2023 ------------------ */
+
+.productos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.productos-inicio-verano{
+    display: flex;
+    overflow: auto;
+    grid-area: producto;
+}
+
+.tarjeta-productos-verano {
+    border:2px solid #252422;
+    width: 200px;
+    height: 350px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tarjeta-productos-verano img {
+    width: 80%;
+}
+
+.tarjeta-productos-verano h3, .tarjeta-producto span{
+    font-size: 16px;
+    padding: 5px;
+}
+
+@media (min-width: 480px) {
+    .header-container{
+        background-color: #252422;
+        text-align: center;
+    }
+    
+    .header-container h1 {
+        color: #FFFCF2;
+    }
+    
+    /* .nav-container{
+        
+    } */
+    
+    .nav-sections, li {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    }
+    
+    .nav-sections, a {
+        color: #403D39;
+        border: 2px solid transparent;
+    }
+    
+    .nav-sections a:hover {
+        color: #403D39;
+        border-bottom: 2px solid #EB5E28;
+        
+    }
+
+    /* ----------------- MAIN --------------------- */
+
+    .titulo-verano h3 {
+        font-size: 30px;
+    }
+}
