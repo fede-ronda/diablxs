@@ -1,0 +1,627 @@
+/* PALETAS DE COLORES
+
+BLANCO: #FFFCF2
+GRIS: #CCC5B9
+GRIS OSCURO: #403D39
+NEGRO: #252422
+NARANJA: #EB5E28
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* outline: 1px solid red; */
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----------BOTONES----------- */
+
+.btn-comprar {
+    background-color: #252422;
+    padding: 5px 5px;
+    border-radius: 2px;
+    color: #FFFCF2;
+    margin-bottom: 20px;
+
+}
+
+.btn-comprar:hover {
+    background-color: #EB5E28;
+}
+
+
+/* ------------------------- INICIO HEADER ------------------------------------------- */
+.header-container {
+    background-color: #252422;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-container h1 {
+    display: flex;
+    align-items: center;
+    color: #FFFCF2;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    color: #FFFCF2;
+}
+
+/* .nav-container{
+    
+} */
+
+.nav-sections,
+li {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    transition-duration: 1s;
+
+}
+
+.nav-sections a {
+    color: #403D39;
+    border: 2px solid transparent;
+}
+
+.nav-sections a:hover {
+    color: #EB5E28;
+    border-bottom: 2px solid #EB5E28;
+
+}
+
+
+/* ------------------------------------- INICIO MAIN --------------------------------- */
+
+
+/* ----------------------------------- PAGINA DE INICIO --------------------------------- */
+
+
+.titulo-verano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+.titulo-verano h3 {
+    font-size: 25px;
+}
+
+.titulo-verano hr {
+    margin-top: 20px;
+    width: 80%;
+}
+
+/* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
+
+
+
+.tarjeta-carrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+
+}
+
+.tarjeta-carrusel img {
+    width: 250px;
+
+}
+
+.tarjeta-carrusel h3 {
+    font-size: 28px;
+}
+
+.tarjeta-carrusel span {
+    font-size: 22px;
+}
+
+
+
+/* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
+
+.titulo-productos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.titulo-productos-inicio h3 {
+    font-size: 25px;
+}
+
+.titulo-productos-inicio hr {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.productos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.productos-inicio-index {
+    display: flex;
+    overflow: auto;
+    grid-area: producto;
+}
+
+.tarjeta-productos-index {
+    border: 2px solid #252422;
+    width: 200px;
+    height: 350px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tarjeta-productos-index img {
+    width: 80%;
+}
+
+.tarjeta-productos-index h3,
+.tarjeta-producto span {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+
+.aviso-promociones-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+
+}
+
+.aviso-promociones-inicio a {
+    color: #FFFCF2;
+}
+
+
+.aviso-promociones-inicio h4 {
+    font-size: 32px;
+}
+
+.aviso-promociones-inicio span {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.aviso-promociones-1,
+.aviso-promociones-2 {
+    padding: 10px;
+    background-color: #252422;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.aviso-promociones-1:hover,
+.aviso-promociones-2:hover {
+    background-color: #EB5E28;
+    transform: scale(1.1);
+}
+
+
+/* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
+
+.titulo-indumentaria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+.titulo-indumentaria h3 {
+    font-size: 25px;
+}
+
+.titulo-indumentaria hr {
+    margin-top: 20px;
+    width: 80%;
+}
+
+/* .main-inicio {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    grid-template-areas:
+    
+    "titulo"
+    "producto"
+    ;
+} */
+
+/* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
+
+.indumentaria-container {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas:
+
+        "filtro"
+        "recomendados"
+        "productos"
+    ;
+    gap: 30px;
+    justify-items: center;
+
+}
+
+
+
+/* ------------------------------- CONTENEDOR FILTRO ------------------------ */
+
+.filtro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #CCC5B9;
+    border-radius: 5px;
+    grid-area: filtro;
+}
+
+.filtro-contenido {
+    color: #252422;
+}
+
+
+
+/* -----------------------------CONTENEDOR RECOMENDADOS -------------------------- */
+.recomendados-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.titulo-recomendados{
+    color: #252422;
+    font-size: 25px;
+}
+
+.productos-recomendados {
+    grid-area: recomendados;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.indumetaria-recomendados {
+    width: 150px;
+    height: 200px;
+    border: solid 2px #252422;
+}
+
+.tarjeta-indumetaria-recomendados {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.tarjeta-indumetaria-recomendados img {
+    width: 80%;
+    overflow: hidden;
+    
+}
+
+.tarjeta-indumetaria-recomendados h3 {
+    font-size: 18px;
+}
+
+/* --------------------- CONTENEDOR PRODUCTOS INDUMENTARIA ------------------------------ */
+
+.titulo-productos-indumentaria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #252422;
+    margin: 20px 0px;
+
+}
+
+.productos-indumentaria-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: productos;
+
+}
+
+
+/* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
+
+@media (min-width: 480px) {
+    .header-container {
+        background-color: #252422;
+    }
+
+    .header-container h1 {
+        color: #FFFCF2;
+    }
+
+    .nav-sections,
+    li {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .nav-sections,
+    a {
+        color: #403D39;
+        border: 2px solid transparent;
+    }
+
+    .nav-sections a:hover {
+        color: #403D39;
+        border-bottom: 2px solid #EB5E28;
+
+    }
+
+    /* ---------------------------------------- MAIN ------------------------------------ */
+
+    .titulo-verano h3 {
+        font-size: 30px;
+    }
+
+    /* ---------------------------- PRODUCTOS INICIO ------------------------------------ */
+
+    .productos-inicio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    
+    .tarjeta-productos-index {
+        border: 2px solid #252422;
+        height: 200px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .tarjeta-productos-index img {
+        width: 40%;
+    }
+    
+    .tarjeta-productos-index h3,
+    .tarjeta-producto span {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+}
+
+/* --------------------------------- RESPONSIVE 1100PX ----------------------------------- */
+
+@media (min-width: 1100px) {
+
+
+    /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
+
+.titulo-indumentaria {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 31vh;
+    padding: 20px 0px;
+
+}
+
+.titulo-indumentaria h3 {
+    font-size: 25px;
+}
+
+.titulo-indumentaria hr {
+    margin-top: 20px;
+    width: 100%;
+}
+
+    /* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
+
+.indumentaria-container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas:
+
+        "filtro recomendados"
+        "filtro productos"
+        
+    ;
+    gap: 30px;
+
+}
+
+
+
+/* ------------------------------- CONTENEDOR FILTRO ------------------------ */
+
+.filtro-container {
+    height: 100%;
+    background-color: #CCC5B9;
+    border-radius: 5px;
+    margin-left: 10px;
+    grid-area: filtro;
+}
+
+.filtro-contenido {
+
+    color: #252422;
+}
+
+
+
+/* -----------------------------CONTENEDOR RECOMENDADOS -------------------------- */
+.recomendados-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.titulo-recomendados{
+    color: #252422;
+    font-size: 25px;
+}
+
+.productos-recomendados {
+    grid-area: recomendados;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.indumetaria-recomendados {
+    width: 150px;
+    height: 200px;
+    border: solid 2px #252422;
+}
+
+.tarjeta-indumetaria-recomendados {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.tarjeta-indumetaria-recomendados img {
+    width: 80%;
+    overflow: hidden;
+    
+}
+
+.tarjeta-indumetaria-recomendados h3 {
+    font-size: 18px;
+}
+
+/* --------------------- CONTENEDOR PRODUCTOS INDUMENTARIA ------------------------------ */
+
+.titulo-productos-indumentaria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #252422;
+    margin: 20px 0px;
+
+}
+
+.productos-indumentaria-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: productos;
+
+}
+
+    /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+
+.aviso-promociones-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 80px;
+
+}
+
+.aviso-promociones-inicio a {
+    color: #FFFCF2;
+}
+
+
+.aviso-promociones-inicio h4 {
+    font-size: 32px;
+}
+
+.aviso-promociones-inicio span {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.aviso-promociones-1,
+.aviso-promociones-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 5px;
+    background-color: #252422;
+    border-radius: 10px;
+}
+
+.aviso-promociones-1:hover,
+.aviso-promociones-2:hover {
+    padding: 0px 5px;
+    background-color: #EB5E28;
+    border-radius: 10px;
+}
+
+
+}
