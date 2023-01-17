@@ -1,3 +1,213 @@
+/* PALETAS DE COLORES
 
+BLANCO: #FFFCF2
+GRIS: #CCC5B9
+GRIS OSCURO: #403D39
+NEGRO: #252422
+NARANJA: #EB5E28
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  /* outline: 1px solid red; */
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -----------BOTONES----------- */
+.btn-comprar {
+  background-color: #252422;
+  padding: 5px 5px;
+  border-radius: 2px;
+  color: #FFFCF2;
+  margin-bottom: 20px;
+}
+
+.btn-comprar:hover {
+  background-color: #EB5E28;
+}
+
+/* ------------------------- INICIO HEADER ------------------------------------------- */
+.header {
+  background-color: #252422;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header h2 {
+  display: flex;
+  align-items: center;
+  color: #FFFCF2;
+}
+.header__icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  color: #FFFCF2;
+}
+
+.nav__sections {
+  padding: 0;
+}
+.nav__sections li {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition-duration: 1s;
+}
+.nav__sections a {
+  color: #403D39;
+  border: 2px solid transparent;
+}
+.nav__sections a:hover {
+  color: #EB5E28;
+  border-bottom: 2px solid #EB5E28;
+}
+
+hr {
+  width: 100%;
+  margin-top: -15px;
+}
+
+/* ------------------------------------- INICIO MAIN --------------------------------- */
+/* ----------------------------------- PAGINA DE INICIO --------------------------------- */
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.titulo h3 {
+  font-size: 25px;
+}
+.titulo hr {
+  margin-top: -5px;
+  width: 80%;
+}
+
+/* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
+.tarjeta__carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  gap: 10px;
+}
+.tarjeta__carrusel img {
+  width: 250px;
+}
+.tarjeta__carrusel h3 {
+  font-size: 28px;
+}
+.tarjeta__carrusel span {
+  font-size: 22px;
+}
+
+/* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
+.titulo__productos-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.titulo__productos-inicio h4 {
+  font-size: 25px;
+  margin-top: 50px;
+}
+.titulo__productos-inicio hr {
+  margin-top: -5px;
+  width: 80%;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.seccion__productos {
+  display: flex;
+  overflow: auto;
+  grid-area: producto;
+}
+.seccion__tarjeta {
+  border: 2px solid #252422;
+  width: 200px;
+  height: 350px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.seccion__tarjeta img {
+  width: 80%;
+}
+.seccion__tarjeta h3 {
+  font-size: 16px;
+  padding: 5px;
+}
+.seccion__tarjeta span {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+.aviso__promociones-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+.aviso__promociones-inicio .aviso__cuotas-1 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-1:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio .aviso__cuotas-2 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-2:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio a {
+  color: #FFFCF2;
+}
+.aviso__promociones-inicio h4 {
+  font-size: 30px;
+}
+.aviso__promociones-inicio span {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */

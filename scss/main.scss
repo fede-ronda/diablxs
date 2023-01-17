@@ -1,0 +1,247 @@
+/* PALETAS DE COLORES
+
+BLANCO: #FFFCF2
+GRIS: #CCC5B9
+GRIS OSCURO: #403D39
+NEGRO: #252422
+NARANJA: #EB5E28
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* outline: 1px solid red; */
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----------BOTONES----------- */
+
+.btn-comprar {
+    background-color: #252422;
+    padding: 5px 5px;
+    border-radius: 2px;
+    color: #FFFCF2;
+    margin-bottom: 20px;
+
+}
+
+.btn-comprar:hover {
+    background-color: #EB5E28;
+}
+
+
+/* ------------------------- INICIO HEADER ------------------------------------------- */
+.header {
+    background-color: #252422;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    h2 {
+        display: flex;
+        align-items: center;
+        color: #FFFCF2;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 15px;
+        font-size: 18px;
+        color: #FFFCF2;
+    }
+}
+
+.nav__sections {
+
+    padding: 0;
+
+        li {
+            display: block;
+            text-align: center;
+            padding: 5px;
+            transition-duration: 1s;
+        }
+
+        a {
+            color: #403D39;
+            border: 2px solid transparent;
+
+            &:hover {
+                color: #EB5E28;
+                border-bottom: 2px solid #EB5E28;
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        margin-top: -15px;
+    }
+
+
+/* ------------------------------------- INICIO MAIN --------------------------------- */
+
+
+/* ----------------------------------- PAGINA DE INICIO --------------------------------- */
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+    h3 {
+        font-size: 25px;
+    }
+
+    hr {
+        margin-top: -5px;
+        width: 80%;
+    }
+}
+
+/* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
+
+.tarjeta__carrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+
+    img {
+        width: 250px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    span {
+        font-size: 22px;
+    }
+}
+
+/* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
+
+.titulo__productos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+    h4 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    hr {
+        margin-top: -5px;
+        width: 80%;
+    }
+}
+
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__productos {
+        display: flex;
+        overflow: auto;
+        grid-area: producto;
+    }
+
+    &__tarjeta {
+        border: 2px solid #252422;
+        width: 200px;
+        height: 350px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        img {
+            width: 80%;
+        }
+
+        h3 {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        span {
+            font-size: 16px;
+            padding: 5px;
+        }
+    }
+}
+
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+
+.aviso__promociones-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+
+    .aviso__cuotas-1{
+        padding: 10px;
+        background-color: #252422;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+        &:hover{
+            background-color: #EB5E28;
+            transform: scale(1.04);
+        }
+    }
+
+    .aviso__cuotas-2 {
+        padding: 10px;
+        background-color: #252422;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+        &:hover{
+            background-color: #EB5E28;
+            transform: scale(1.04);
+        }
+    }
+
+    a {
+        color: #FFFCF2;
+    }
+    h4{
+        font-size: 30px;
+    }
+    span {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
