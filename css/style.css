@@ -7,6 +7,7 @@ NEGRO: #252422
 NARANJA: #EB5E28
 
  */
+/* ------------------------- RESET ------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -37,51 +38,6 @@ a {
   background-color: #EB5E28;
 }
 
-/* ------------------------- INICIO HEADER ------------------------------------------- */
-.header {
-  background-color: #252422;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.header h2 {
-  display: flex;
-  align-items: center;
-  color: #FFFCF2;
-}
-.header__icons {
-  display: flex;
-  gap: 15px;
-  font-size: 18px;
-  color: #FFFCF2;
-}
-
-.nav__sections {
-  padding: 0;
-}
-.nav__sections li {
-  display: block;
-  text-align: center;
-  padding: 5px;
-  transition-duration: 1s;
-}
-.nav__sections a {
-  color: #403D39;
-  border: 2px solid transparent;
-}
-.nav__sections a:hover {
-  color: #EB5E28;
-  border-bottom: 2px solid #EB5E28;
-}
-
-hr {
-  width: 100%;
-  margin-top: -15px;
-}
-
-/* ------------------------------------- INICIO MAIN --------------------------------- */
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
 .titulo {
   display: flex;
@@ -210,5 +166,51 @@ hr {
   display: flex;
   justify-content: center;
 }
+
+/* ------------------------- INICIO HEADER ------------------------------------------- */
+.header {
+  background-color: #252422;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header h2 {
+  display: flex;
+  align-items: center;
+  color: #FFFCF2;
+}
+.header__icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  color: #FFFCF2;
+}
+
+.nav__sections {
+  padding: 0;
+}
+.nav__sections li {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition-duration: 1s;
+}
+.nav__sections a {
+  color: #403D39;
+  border: 2px solid transparent;
+}
+.nav__sections a:hover {
+  color: #EB5E28;
+  border-bottom: 2px solid #EB5E28;
+}
+
+hr {
+  width: 100%;
+  margin-top: -15px;
+}
+
+/* ------------------------------------- INICIO MAIN --------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
