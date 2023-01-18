@@ -1,43 +1,13 @@
-/* PALETAS DE COLORES
+@import "utils/variables";
+@import "base/base";
+@import "components/botones";
+@import "components/tarjetas";
+@import "pages/index";
+@import "pages/indumentaria";
+@import "pages/calzado";
+@import "pages/accesorios";
+@import "pages/promos";
 
-BLANCO: #FFFCF2
-GRIS: #CCC5B9
-GRIS OSCURO: #403D39
-NEGRO: #252422
-NARANJA: #EB5E28
- */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-    /* outline: 1px solid red; */
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* -----------BOTONES----------- */
-
-.btn-comprar {
-    background-color: #252422;
-    padding: 5px 5px;
-    border-radius: 2px;
-    color: #FFFCF2;
-    margin-bottom: 20px;
-
-}
-
-.btn-comprar:hover {
-    background-color: #EB5E28;
-}
 
 
 /* ------------------------- INICIO HEADER ------------------------------------------- */
