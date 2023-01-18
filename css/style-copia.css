@@ -241,7 +241,7 @@ li {
 
 /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
 
-.titulo-indumentaria {
+.titulo__indumentaria {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -250,11 +250,11 @@ li {
 
 }
 
-.titulo-indumentaria h3 {
+.titulo__indumentaria h3 {
     font-size: 25px;
 }
 
-.titulo-indumentaria hr {
+.titulo__indumentaria hr {
     margin-top: 20px;
     width: 80%;
 }
@@ -272,7 +272,7 @@ li {
 
 /* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
 
-.indumentaria-container {
+.indumentaria__container {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 3;
@@ -291,7 +291,7 @@ li {
 
 /* ------------------------------- CONTENEDOR FILTRO ------------------------ */
 
-.filtro-container {
+.filtro__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,14 +302,14 @@ li {
     grid-area: filtro;
 }
 
-.filtro-contenido {
+.filtro__contenido {
     color: #252422;
 }
 
 
 
 /* -----------------------------CONTENEDOR RECOMENDADOS -------------------------- */
-.recomendados-container {
+.recomendados__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,12 +317,12 @@ li {
     gap: 10px;
 
 }
-.titulo-recomendados{
+.titulo__recomendados{
     color: #252422;
     font-size: 25px;
 }
 
-.productos-recomendados {
+.productos__recomendados {
     grid-area: recomendados;
     display: flex;
     justify-content: center;
@@ -331,13 +331,13 @@ li {
 
 }
 
-.indumetaria-recomendados {
+.indumetaria__recomendados {
     width: 150px;
     height: 200px;
     border: solid 2px #252422;
 }
 
-.tarjeta-indumetaria-recomendados {
+.recomendados__tarjeta--indumentaria {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -345,19 +345,19 @@ li {
 
 }
 
-.tarjeta-indumetaria-recomendados img {
+.tarjeta__indumetaria-recomendados img {
     width: 80%;
     overflow: hidden;
     
 }
 
-.tarjeta-indumetaria-recomendados h3 {
+.tarjeta__indumetaria-recomendados h3 {
     font-size: 18px;
 }
 
 /* --------------------- CONTENEDOR PRODUCTOS INDUMENTARIA ------------------------------ */
 
-.titulo-productos-indumentaria{
+.productos__titulo--indumentaria{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,7 +367,7 @@ li {
 
 }
 
-.productos-indumentaria-container {
+.productos__container--indumentaria {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
