@@ -400,10 +400,25 @@ hr {
   background-color: #252422;
 }
 
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
 .footer__icons i {
+  font-size: 30px;
   color: #FFFCF2;
 }
 
+.footer__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .footer__lista ul {
+  text-align: center;
   color: #FFFCF2;
 }/*# sourceMappingURL=main.css.map */

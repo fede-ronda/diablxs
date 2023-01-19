@@ -114,13 +114,24 @@ flex-direction: column;
 }
 
 .footer__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
     i{
+        font-size: 30px;
         color: $color-primario;
     }
 }
 
 .footer__lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     ul{
+        text-align: center;
         color: $color-primario;
     }
 }
