@@ -31,6 +31,10 @@
         width: 250px;
     }
 
+    hr{
+        margin: 0;
+    }
+
     h3 {
         font-size: 28px;
     }
@@ -63,10 +67,10 @@
 
 .seccion {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     &__productos {
         display: flex;

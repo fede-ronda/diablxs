@@ -35,15 +35,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 40px;
-    background-color: #CCC5B9;
     border-radius: 5px;
     grid-area: filtro;
 }
 
 .filtro__contenido {
     color: $color-cuaternario;
+
+    button{
+        border: 1px solid $color-cuaternario;
+        border-radius: 2px;
+        text-align: center;
+        width: 200px;
+        height: auto;
+        background: transparent;
+    }
+
+    button:hover{
+        border: 1px solid $color-cuaternario;
+        border-radius: 2px;
+        text-align: center;
+        width: 200px;
+        height: auto;
+        background-color: $color-cuaternario;
+        color: $color-primario;
+    }
 }
 
 .recomendados__container{
@@ -63,30 +79,16 @@
 .recomendados__productos{
     grid-area: recomendados;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
 }
 
-.recomendados__indumetaria {
-    width: 150px;
-    height: 200px;
-    border: solid 2px #252422;
-}
-
-.recomendados__tarjeta--indumentaria {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-
-    img{
-        width: 80%;
-        overflow: hidden;
-    }
-    h3{
-        font-size: 18px;
-    }
+.recomendados__indumetaria:hover{
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.35);
 
 }
 
@@ -110,10 +112,10 @@
 
 }
 
-.productos__indumentaria {
-    width: 150px;
-    height: 200px;
-    border: solid 2px $color-cuaternario;
+.productos__indumentaria:hover{
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.35);
+
 }
 
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */

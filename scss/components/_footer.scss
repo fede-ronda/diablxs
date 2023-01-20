@@ -1,0 +1,86 @@
+/* ------------------------------------- INICIO FOOTER --------------------------------- */
+
+.footer__newsletter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #fff;
+
+    h5{
+        font-size: 20px;
+    }
+    span{
+        font-size: 12px;
+    }
+}
+
+.newsletter__title{
+display: flex;
+flex-direction: column;
+
+}
+
+.newsletter__form{
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+.newsletter__email{
+    input{
+        background: transparent;
+        outline: none;
+        border: 1px solid $color-terciario;
+        text-align: center;
+    }
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: $color-cuaternario;
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+
+    i{
+        font-size: 30px;
+        color: $color-primario;
+    }
+    i:hover{
+        color: $color-quinario;
+    }
+}
+
+.footer__lista{
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: $color-primario;
+        padding: 0;
+        a{
+            color: $color-primario;
+        }
+        a:hover{
+            color: $color-quinario;
+        }
+    }
+}
