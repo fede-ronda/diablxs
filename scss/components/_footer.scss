@@ -84,3 +84,48 @@ flex-direction: column;
         }
     }
 }
+
+/* -------------------------------- INICIO FOOTER RESPONSIVE 768PX ------------------------------- */
+
+@media (min-width: 768px) {
+
+    .newsletter__form{
+    
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    
+    }
+    
+    .newsletter__email{
+        input{
+            height: 30px;
+            background: transparent;
+            outline: none;
+            border: 1px solid $color-terciario;
+            text-align: center;
+        }
+    }
+
+    .footer__lista{
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            color: $color-primario;
+            padding: 0;
+            a{
+                color: $color-primario;
+            }
+            a:hover{
+                color: $color-quinario;
+            }
+        }
+    }
+
+}

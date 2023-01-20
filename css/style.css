@@ -73,6 +73,32 @@ hr {
   margin-top: -15px;
 }
 
+/* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
+@media (min-width: 480px) {
+  .nav__sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+  }
+  .nav__sections li {
+    padding: 5px;
+    transition-duration: 1s;
+  }
+  .nav__sections a {
+    color: #403D39;
+    border: 2px solid transparent;
+  }
+  .nav__sections a:hover {
+    color: #EB5E28;
+    border-bottom: 2px solid #EB5E28;
+  }
+  hr {
+    width: 100%;
+    margin-top: -15px;
+  }
+}
 /* ------------------------------------- INICIO FOOTER --------------------------------- */
 .footer__newsletter {
   display: flex;
@@ -145,6 +171,207 @@ hr {
 }
 .footer__lista ul a:hover {
   color: #EB5E28;
+}
+
+/* -------------------------------- INICIO FOOTER RESPONSIVE 768PX ------------------------------- */
+@media (min-width: 768px) {
+  .newsletter__form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .newsletter__email input {
+    height: 30px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #403D39;
+    text-align: center;
+  }
+  .footer__lista ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #FFFCF2;
+    padding: 0;
+  }
+  .footer__lista ul a {
+    color: #FFFCF2;
+  }
+  .footer__lista ul a:hover {
+    color: #EB5E28;
+  }
+}
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+.aviso__promociones-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+.aviso__promociones-inicio .aviso__cuotas-1 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-1:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio .aviso__cuotas-2 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-2:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio a {
+  color: #FFFCF2;
+}
+.aviso__promociones-inicio h4 {
+  font-size: 30px;
+}
+.aviso__promociones-inicio span {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
+/* -------------------------------- INICIO RESPONSIVE 768PX ------------------------------- */
+@media (min-width: 768px) {
+  .aviso__promociones-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .aviso__promociones-inicio .aviso__cuotas-1 {
+    padding: 10px;
+    background-color: #252422;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+  }
+  .aviso__promociones-inicio .aviso__cuotas-1:hover {
+    background-color: #EB5E28;
+    transform: scale(1.04);
+  }
+  .aviso__promociones-inicio .aviso__cuotas-2 {
+    padding: 10px;
+    background-color: #252422;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+  }
+  .aviso__promociones-inicio .aviso__cuotas-2:hover {
+    background-color: #EB5E28;
+    transform: scale(1.04);
+  }
+  .aviso__promociones-inicio a {
+    color: #FFFCF2;
+  }
+  .aviso__promociones-inicio h4 {
+    font-size: 30px;
+  }
+  .aviso__promociones-inicio span {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.budget-input {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=range].budget-slider {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+input[type=range].budget-slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 8px;
+  border: 1px solid #4C4C4C !important;
+  background: #6F6F6F -webkit-linear-gradient(top, #7A7A7B, #55575A);
+}
+
+input[type=range].budget-slider::-moz-range-track {
+  height: 8px;
+  border-radius: 8px;
+  border: 1px solid #4C4C4C !important;
+  background: #6F6F6F -moz-linear-gradient(top, #7A7A7B, #55575A);
+}
+
+input[type=range].budget-slider::-ms-track {
+  box-sizing: border-box;
+  height: 8px;
+  border-radius: 8px;
+  margin-top: 4px;
+  color: transparent;
+  border: none !important;
+  background: #6F6F6F linear-gradient(to bottom, #7A7A7B, #55575A);
+}
+
+input[type=range].budget-slider::-ms-fill-lower {
+  background: transparent;
+}
+
+input[type=range].budget-slider::-ms-fill-upper {
+  background: transparent;
+}
+
+input[type=range].budget-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #F8F8F9, #D9D9E2);
+  /* @alternate */
+  background-image: linear-gradient(to bottom, #F8F8F9, #D9D9E2);
+  border: 1px solid #4C4C4C;
+  margin-top: -8px;
+}
+
+input[type=range].budget-slider::-moz-range-thumb {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background: #f5f5f5 -moz-linear-gradient(top, #F8F8F9, #D9D9E2);
+  border: 1px solid #4C4C4C;
+}
+
+input[type=range].budget-slider::-ms-thumb {
+  box-sizing: border-box;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background: #f5f5f5 linear-gradient(top, #F8F8F9, #D9D9E2);
+  border: 1px solid #4C4C4C;
+}
+
+input[type=range].budget-slider:focus {
+  outline: none;
+}
+
+input[type=range].budget-slider::-moz-focus-outer {
+  border: 0;
 }
 
 /* ----------- BOTONES ----------- */
@@ -299,48 +526,8 @@ hr {
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
-/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
-.aviso__promociones-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 30px;
-}
-.aviso__promociones-inicio .aviso__cuotas-1 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-1:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio .aviso__cuotas-2 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-2:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio a {
-  color: #FFFCF2;
-}
-.aviso__promociones-inicio h4 {
-  font-size: 30px;
-}
-.aviso__promociones-inicio span {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-}
-
+/* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
+/* -------------------------------- INICIO RESPONSIVE 768PX ------------------------------- */
 /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
 .titulo__indumentaria {
   display: flex;
@@ -396,6 +583,10 @@ hr {
   color: #FFFCF2;
 }
 
+.filtro__expandido {
+  display: none;
+}
+
 .recomendados__container {
   display: flex;
   flex-direction: column;
@@ -446,48 +637,90 @@ hr {
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
-/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
-.aviso__promociones-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 30px;
+/* -------------------------------- INICIO INDUMENTARIA RESPONSIVE 1100PX ------------------------------- */
+@media (min-width: 1100px) {
+  .indumentaria__container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: "filtro recomendados" "filtro productos";
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+  .filtro__container {
+    display: flex;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 5px;
+    grid-area: filtro;
+  }
+  .filtro__contenido {
+    color: #252422;
+  }
+  .filtro__contenido .filtro__expandido {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 600px;
+    margin-left: 20px;
+    background-color: cornflowerblue;
+  }
+  .filtro__contenido .filtro__expandido h6 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .filtro__contenido .filtro__expandido--tipo {
+    color: aqua;
+  }
+  .filtro__contenido button {
+    display: none;
+  }
+  .recomendados__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .recomendados__titulo {
+    color: #252422;
+    font-size: 25px;
+    margin: 0;
+  }
+  .recomendados__productos {
+    grid-area: recomendados;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .recomendados__indumetaria:hover {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  }
+  .productos__titulo--indumentaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #252422;
+    margin: 0;
+  }
+  .productos__container--indumentaria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 10px;
+    grid-area: productos;
+  }
+  .productos__indumentaria:hover {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  }
 }
-.aviso__promociones-inicio .aviso__cuotas-1 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-1:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio .aviso__cuotas-2 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-2:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio a {
-  color: #FFFCF2;
-}
-.aviso__promociones-inicio h4 {
-  font-size: 30px;
-}
-.aviso__promociones-inicio span {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-}
-
 /* -------------------------------- PAGINA CALZADO ---------------------------------- */
 .titulo__calzado {
   display: flex;
@@ -591,48 +824,6 @@ hr {
 .productos__calzado:hover {
   border-radius: 0px 0px 5px 5px;
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
-.aviso__promociones-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 30px;
-}
-.aviso__promociones-inicio .aviso__cuotas-1 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-1:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio .aviso__cuotas-2 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-2:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio a {
-  color: #FFFCF2;
-}
-.aviso__promociones-inicio h4 {
-  font-size: 30px;
-}
-.aviso__promociones-inicio span {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
 }
 
 /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
@@ -740,48 +931,6 @@ hr {
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
-/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
-.aviso__promociones-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 30px;
-}
-.aviso__promociones-inicio .aviso__cuotas-1 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-1:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio .aviso__cuotas-2 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-2:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio a {
-  color: #FFFCF2;
-}
-.aviso__promociones-inicio h4 {
-  font-size: 30px;
-}
-.aviso__promociones-inicio span {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-}
-
 /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
 .titulo__promos {
   display: flex;
@@ -885,48 +1034,6 @@ hr {
 .productos__promos:hover {
   border-radius: 0px 0px 5px 5px;
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
-.aviso__promociones-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 30px;
-}
-.aviso__promociones-inicio .aviso__cuotas-1 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-1:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio .aviso__cuotas-2 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-.aviso__promociones-inicio .aviso__cuotas-2:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio a {
-  color: #FFFCF2;
-}
-.aviso__promociones-inicio h4 {
-  font-size: 30px;
-}
-.aviso__promociones-inicio span {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

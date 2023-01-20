@@ -47,3 +47,37 @@
         width: 100%;
         margin-top: -15px;
     }
+
+    /* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
+
+@media (min-width: 480px) {
+    .nav__sections {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        padding: 0;
+    
+            li {
+                padding: 5px;
+                transition-duration: 1s;
+            }
+    
+            a {
+                color: #403D39;
+                border: 2px solid transparent;
+    
+                &:hover {
+                    color: #EB5E28;
+                    border-bottom: 2px solid #EB5E28;
+                }
+            }
+        }
+    
+        hr {
+            width: 100%;
+            margin-top: -15px;
+        }
+
+}
