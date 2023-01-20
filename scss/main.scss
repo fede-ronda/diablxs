@@ -110,6 +110,9 @@ flex-direction: column;
 }
 
 .footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     background-color: $color-cuaternario;
 }
 
@@ -119,19 +122,31 @@ flex-direction: column;
     align-items: center;
     gap: 30px;
     padding: 10px;
+
     i{
         font-size: 30px;
         color: $color-primario;
     }
+    i:hover{
+        color: $color-quinario;
+    }
 }
 
 .footer__lista{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     ul{
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
         color: $color-primario;
+        padding: 0;
+        a{
+            color: $color-primario;
+        }
+        a:hover{
+            color: $color-quinario;
+        }
     }
 }

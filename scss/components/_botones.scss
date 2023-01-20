@@ -1,14 +1,37 @@
-/* -----------BOTONES----------- */
+/* ----------- BOTONES ----------- */
 
-.btn-comprar {
-    background-color: #252422;
-    padding: 5px 5px;
-    border-radius: 2px;
-    color: #FFFCF2;
-    margin-bottom: 20px;
+/* ----------- BOTON ENVIAR----------- */
+.btn__enviar{
+    input{
+        padding: 2px 10px;
+        background: transparent;
+        border: 1px solid $color-cuaternario;
+    }
 
+    input:hover{
+        padding: 2px 10px;
+        color: $color-primario;
+        background: $color-cuaternario;
+        border: 1px solid $color-cuaternario;
+    }
 }
 
-.btn-comprar:hover {
-    background-color: #EB5E28;
+/* ----------- BOTON COMPRAR ----------- */
+.btn__comprar{
+    border: none;
+    background: transparent;
+
+    a{
+        border: 1px solid $color-cuaternario;
+        border-radius: 5px;
+        background-color: $color-cuaternario;
+        padding: 2px 5px;
+        color: $color-primario;
+    }
+    a:hover{
+        border: 1px solid $color-cuaternario;
+        border-radius: 5px;
+        background:transparent;
+        color: $color-cuaternario;
+    }
 }

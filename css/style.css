@@ -25,17 +25,37 @@ a {
   text-decoration: none;
 }
 
-/* -----------BOTONES----------- */
-.btn-comprar {
-  background-color: #252422;
-  padding: 5px 5px;
-  border-radius: 2px;
+/* ----------- BOTONES ----------- */
+/* ----------- BOTON ENVIAR----------- */
+.btn__enviar input {
+  padding: 2px 10px;
+  background: transparent;
+  border: 1px solid #252422;
+}
+.btn__enviar input:hover {
+  padding: 2px 10px;
   color: #FFFCF2;
-  margin-bottom: 20px;
+  background: #252422;
+  border: 1px solid #252422;
 }
 
-.btn-comprar:hover {
-  background-color: #EB5E28;
+/* ----------- BOTON COMPRAR ----------- */
+.btn__comprar {
+  border: none;
+  background: transparent;
+}
+.btn__comprar a {
+  border: 1px solid #252422;
+  border-radius: 5px;
+  background-color: #252422;
+  padding: 2px 5px;
+  color: #FFFCF2;
+}
+.btn__comprar a:hover {
+  border: 1px solid #252422;
+  border-radius: 5px;
+  background: transparent;
+  color: #252422;
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
@@ -397,6 +417,9 @@ hr {
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   background-color: #252422;
 }
 
@@ -411,16 +434,24 @@ hr {
   font-size: 30px;
   color: #FFFCF2;
 }
+.footer__icons i:hover {
+  color: #EB5E28;
+}
 
-.footer__lista {
+.footer__lista ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.footer__lista ul {
-  text-align: center;
+  gap: 5px;
   color: #FFFCF2;
+  padding: 0;
+}
+.footer__lista ul a {
+  color: #FFFCF2;
+}
+.footer__lista ul a:hover {
+  color: #EB5E28;
 }
 
 /*# sourceMappingURL=style.css.map */
