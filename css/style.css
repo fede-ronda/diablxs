@@ -488,4 +488,445 @@ hr {
   justify-content: center;
 }
 
+/* -------------------------------- PAGINA CALZADO ---------------------------------- */
+.titulo__calzado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.titulo__calzado h3 {
+  font-size: 25px;
+}
+.titulo__calzado hr {
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* -----------------------ESTRUCTURA DE CALZADO ---------------------------------- */
+.calzado__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: "filtro" "recomendados" "productos";
+  gap: 30px;
+  justify-items: center;
+}
+
+.filtro__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  grid-area: filtro;
+}
+
+.filtro__contenido {
+  color: #252422;
+}
+.filtro__contenido button {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background: transparent;
+}
+.filtro__contenido button:hover {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background-color: #252422;
+  color: #FFFCF2;
+}
+
+.recomendados__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__titulo {
+  color: #252422;
+  font-size: 25px;
+}
+
+.recomendados__productos {
+  grid-area: recomendados;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__calzado:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+.productos__titulo--calzado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #252422;
+  margin: 20px 0px;
+}
+
+.productos__container--calzado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: productos;
+}
+
+.productos__calzado:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+.aviso__promociones-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+.aviso__promociones-inicio .aviso__cuotas-1 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-1:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio .aviso__cuotas-2 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-2:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio a {
+  color: #FFFCF2;
+}
+.aviso__promociones-inicio h4 {
+  font-size: 30px;
+}
+.aviso__promociones-inicio span {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
+.titulo__accesorios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.titulo__accesorios h3 {
+  font-size: 25px;
+}
+.titulo__accesorios hr {
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
+.accesorios__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: "filtro" "recomendados" "productos";
+  gap: 30px;
+  justify-items: center;
+}
+
+.filtro__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  grid-area: filtro;
+}
+
+.filtro__contenido {
+  color: #252422;
+}
+.filtro__contenido button {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background: transparent;
+}
+.filtro__contenido button:hover {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background-color: #252422;
+  color: #FFFCF2;
+}
+
+.recomendados__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__titulo {
+  color: #252422;
+  font-size: 25px;
+}
+
+.recomendados__productos {
+  grid-area: recomendados;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__accesorios:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+.productos__titulo--accesorios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #252422;
+  margin: 20px 0px;
+}
+
+.productos__container--accesorios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: productos;
+}
+
+.productos__accesorios:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+.aviso__promociones-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+.aviso__promociones-inicio .aviso__cuotas-1 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-1:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio .aviso__cuotas-2 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-2:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio a {
+  color: #FFFCF2;
+}
+.aviso__promociones-inicio h4 {
+  font-size: 30px;
+}
+.aviso__promociones-inicio span {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
+.titulo__promos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.titulo__promos h3 {
+  font-size: 25px;
+}
+.titulo__promos hr {
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
+.promos__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: "filtro" "recomendados" "productos";
+  gap: 30px;
+  justify-items: center;
+}
+
+.filtro__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  grid-area: filtro;
+}
+
+.filtro__contenido {
+  color: #252422;
+}
+.filtro__contenido button {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background: transparent;
+}
+.filtro__contenido button:hover {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background-color: #252422;
+  color: #FFFCF2;
+}
+
+.recomendados__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__titulo {
+  color: #252422;
+  font-size: 25px;
+}
+
+.recomendados__productos {
+  grid-area: recomendados;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__promos:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+.productos__titulo--promos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #252422;
+  margin: 20px 0px;
+}
+
+.productos__container--promos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: productos;
+}
+
+.productos__promos:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
+.aviso__promociones-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+.aviso__promociones-inicio .aviso__cuotas-1 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-1:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio .aviso__cuotas-2 {
+  padding: 10px;
+  background-color: #252422;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.aviso__promociones-inicio .aviso__cuotas-2:hover {
+  background-color: #EB5E28;
+  transform: scale(1.04);
+}
+.aviso__promociones-inicio a {
+  color: #FFFCF2;
+}
+.aviso__promociones-inicio h4 {
+  font-size: 30px;
+}
+.aviso__promociones-inicio span {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
