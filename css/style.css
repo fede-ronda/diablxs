@@ -25,6 +25,129 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+/* ------------------------- INICIO HEADER ------------------------------------------- */
+.header {
+  background-color: #252422;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header h2 {
+  display: flex;
+  align-items: center;
+  color: #FFFCF2;
+}
+.header__icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  color: #FFFCF2;
+}
+
+.nav__sections {
+  padding: 0;
+}
+.nav__sections li {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition-duration: 1s;
+}
+.nav__sections a {
+  color: #403D39;
+  border: 2px solid transparent;
+}
+.nav__sections a:hover {
+  color: #EB5E28;
+  border-bottom: 2px solid #EB5E28;
+}
+
+hr {
+  width: 100%;
+  margin-top: -15px;
+}
+
+/* ------------------------------------- INICIO MAIN --------------------------------- */
+/* ------------------------------------- INICIO FOOTER --------------------------------- */
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #FFFCF2;
+}
+.footer__newsletter h5 {
+  font-size: 20px;
+}
+.footer__newsletter span {
+  font-size: 12px;
+}
+
+.newsletter__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter__email input {
+  background: transparent;
+  outline: none;
+  border: 1px solid #403D39;
+  text-align: center;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #252422;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.footer__icons i {
+  font-size: 30px;
+  color: #FFFCF2;
+}
+.footer__icons i:hover {
+  color: #EB5E28;
+}
+
+.footer__lista ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #FFFCF2;
+  padding: 0;
+}
+.footer__lista ul a {
+  color: #FFFCF2;
+}
+.footer__lista ul a:hover {
+  color: #EB5E28;
+}
+
 /* ----------- BOTONES ----------- */
 /* ----------- BOTON ENVIAR----------- */
 .btn__enviar input {
@@ -41,21 +164,42 @@ a {
 
 /* ----------- BOTON COMPRAR ----------- */
 .btn__comprar {
-  border: none;
-  background: transparent;
-}
-.btn__comprar a {
   border: 1px solid #252422;
   border-radius: 5px;
-  background-color: #252422;
   padding: 2px 5px;
+  background: #252422;
+}
+.btn__comprar a {
   color: #FFFCF2;
 }
 .btn__comprar a:hover {
-  border: 1px solid #252422;
-  border-radius: 5px;
-  background: transparent;
   color: #252422;
+}
+
+.btn__comprar:hover {
+  background: transparent;
+}
+
+.producto__tarjeta {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  gap: 10px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #fff;
+}
+.producto__tarjeta img {
+  width: 100%;
+}
+.producto__tarjeta h3 {
+  font-size: 22px;
+  margin: 0;
+}
+.producto__tarjeta span {
+  font-size: 22px;
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
@@ -122,27 +266,9 @@ a {
   overflow: auto;
   grid-area: producto;
 }
-.seccion__tarjeta {
-  border: 2px solid #252422;
-  width: 200px;
-  height: 350px;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-.seccion__tarjeta img {
-  width: 80%;
-}
-.seccion__tarjeta h3 {
-  font-size: 16px;
-  padding: 5px;
-}
-.seccion__tarjeta span {
-  font-size: 16px;
-  padding: 5px;
+.seccion__productos:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
@@ -333,125 +459,6 @@ a {
   font-size: 16px;
   display: flex;
   justify-content: center;
-}
-
-/* ------------------------- INICIO HEADER ------------------------------------------- */
-.header {
-  background-color: #252422;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.header h2 {
-  display: flex;
-  align-items: center;
-  color: #FFFCF2;
-}
-.header__icons {
-  display: flex;
-  gap: 15px;
-  font-size: 18px;
-  color: #FFFCF2;
-}
-
-.nav__sections {
-  padding: 0;
-}
-.nav__sections li {
-  display: block;
-  text-align: center;
-  padding: 5px;
-  transition-duration: 1s;
-}
-.nav__sections a {
-  color: #403D39;
-  border: 2px solid transparent;
-}
-.nav__sections a:hover {
-  color: #EB5E28;
-  border-bottom: 2px solid #EB5E28;
-}
-
-hr {
-  width: 100%;
-  margin-top: -15px;
-}
-
-/* ------------------------------------- INICIO MAIN --------------------------------- */
-/* ------------------------------------- INICIO FOOTER --------------------------------- */
-.footer__newsletter {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 20px;
-  padding: 10px;
-  background-color: #CCC5B9;
-}
-.footer__newsletter h5 {
-  font-size: 20px;
-}
-.footer__newsletter span {
-  font-size: 12px;
-}
-
-.newsletter__title {
-  display: flex;
-  flex-direction: column;
-}
-
-.newsletter__form form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.newsletter__email input {
-  background: transparent;
-  outline: none;
-  border: 1px solid #403D39;
-  text-align: center;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-color: #252422;
-}
-
-.footer__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 10px;
-}
-.footer__icons i {
-  font-size: 30px;
-  color: #FFFCF2;
-}
-.footer__icons i:hover {
-  color: #EB5E28;
-}
-
-.footer__lista ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  color: #FFFCF2;
-  padding: 0;
-}
-.footer__lista ul a {
-  color: #FFFCF2;
-}
-.footer__lista ul a:hover {
-  color: #EB5E28;
 }
 
 /*# sourceMappingURL=style.css.map */

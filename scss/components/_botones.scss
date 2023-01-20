@@ -18,20 +18,19 @@
 
 /* ----------- BOTON COMPRAR ----------- */
 .btn__comprar{
-    border: none;
-    background: transparent;
+    border: 1px solid $color-cuaternario;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background: $color-cuaternario;
 
     a{
-        border: 1px solid $color-cuaternario;
-        border-radius: 5px;
-        background-color: $color-cuaternario;
-        padding: 2px 5px;
         color: $color-primario;
     }
     a:hover{
-        border: 1px solid $color-cuaternario;
-        border-radius: 5px;
-        background:transparent;
         color: $color-cuaternario;
     }
+}
+
+.btn__comprar:hover{
+    background: transparent;
 }

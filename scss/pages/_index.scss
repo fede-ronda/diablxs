@@ -72,33 +72,16 @@
         display: flex;
         overflow: auto;
         grid-area: producto;
+
+
     }
 
-    &__tarjeta {
-        border: 2px solid #252422;
-        width: 200px;
-        height: 350px;
-        min-width: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
+    &__productos:hover{
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.35);
 
-        img {
-            width: 80%;
-        }
-
-        h3 {
-            font-size: 16px;
-            padding: 5px;
-        }
-
-        span {
-            font-size: 16px;
-            padding: 5px;
-        }
     }
+
 }
 
 
