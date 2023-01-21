@@ -51,20 +51,52 @@
 
     <main>
 
-        <!----------------------- TITULO CALZADO ------------------------------>
+        <!----------------------- TITULO PROMOS ------------------------------>
 
         <div class="titulo__promos">
             <h3>PROMOCIONES</h3>
             <hr>
         </div>
 
-        <!-------------------------- ESTRUCTURA CALZADO ------------------------>
+        <!-------------------------- ESTRUCTURA PROMOS ------------------------>
 
-        <!----------------------- FILTRO CALZADO ------------------------------->
-        <div class="promos__container">
+        <!----------------------- FILTRO PROMOS ------------------------------->
+        <div class="catalogo__container">
             <div class="filtro__container">
                 <div class="filtro__contenido">
                     <button>Filtro +</button>
+                    <div class="filtro__expandido">
+                        <h6>FILTRAR POR:</h6>
+                        <div class="filtro__expandido--tipo">
+                            <h5>TIPO:</h5>
+                            <form class="tipo__radio" name="formulario" method="post" action="">
+                                <ul>
+                                    <li><input type="radio" name="tipo" value="" />10% OFF</li>
+                                    <li><input type="radio" name="tipo" value="" />20% OFF</li>
+                                    <li><input type="radio" name="tipo" value="" />50% OFF</li>
+                                    <li><input type="radio" name="tipo" value="" />2X1</li>
+                                    <li><input type="radio" name="tipo" value="" />3X2</li>
+                                    <li><input type="radio" name="tipo" value="" />2da al 30%</li>
+                                    <li><input type="radio" name="tipo" value="" />3ra al 60%</li>
+                                    <li><input type="radio" name="tipo" value="" />DISCONTINUOS</li>
+                                </ul>
+
+                            </form>
+                        </div>
+                        <div class="filtro__expandido--precio">
+                            <h5>PRECIO:</h5>
+                            <div class="precio__rango">
+                                <span>$1.000</span>
+                                <span>$50.000</span>
+                            </div>
+                            <span class="budget-input">
+                                <span class="monthly-budget" id="slider-span">
+                                    <input id="budget-slider" class="budget-slider" type="range" name="budget-slider"
+                                        value="20.00" min="5" max="50" step="0.5" />
+                                </span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -72,7 +104,7 @@
             <div class="recomendados__container">
                 <h4 class="recomendados__titulo">RECOMENDADOS</h4>
                 <div class="recomendados__productos">
-                    <div class="recomendados__promos">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -81,7 +113,52 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__promos">
+                    <div class="recomendados__card">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="recomendados__card">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="recomendados__card">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="recomendados__card">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="recomendados__card">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -93,11 +170,11 @@
                 </div>
             </div>
 
-            <!-------------------------- PRODUCTOS CALZADO ------------------>
+            <!-------------------------- PRODUCTOS PROMOS ------------------>
             <div>
-                <h4 class="productos__titulo--promos">PRODUCTOS</h4>
-                <div class="productos__container--promos">
-                    <div class="productos__promos">
+                <h4 class="productos__titulo--catalogo">PRODUCTOS</h4>
+                <div class="productos__container--catalogo">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -106,7 +183,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__promos">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -115,7 +192,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__promos">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -124,7 +201,115 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__promos">
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
+                        <article class="producto__tarjeta">
+                            <img src="/img/remera-negra.png" alt="">
+                            <hr>
+                            <h3>Remera Negra L</h3>
+                            <span>$1.999</span>
+                            <button class="btn__comprar"><a href="">Comprar</a></button>
+                        </article>
+                    </div>
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -138,6 +323,9 @@
             </div>
 
         </div>
+
+
+
 
         <!--------------------- INICIO AVISO DE CUOTAS -------------------->
 
@@ -155,7 +343,12 @@
                 </a>
             </div>
         </section>
+
+
+
     </main>
+
+
 
     <!----------------------------- FOOTER ---------------------------->
 

@@ -61,17 +61,34 @@
         <!-------------------------- ESTRUCTURA INDUMENTARIA ------------------------>
 
         <!----------------------- FILTRO INDUMENTARIA ------------------------------->
-        <div class="indumentaria__container">
+        <div class="catalogo__container">
             <div class="filtro__container">
                 <div class="filtro__contenido">
                     <button>Filtro +</button>
                     <div class="filtro__expandido">
-                        <h6>Filtrar por:</h6>
+                        <h6>FILTRAR POR:</h6>
                         <div class="filtro__expandido--tipo">
-                            <h5>Tipo de Indumentaria:</h5>
+                            <h5>TIPO:</h5>
+                            <form class="tipo__radio" name="formulario" method="post" action="">
+                                <ul>
+                                    <li><input type="radio" name="tipo" value="" />REMERAS</li>
+                                    <li><input type="radio" name="tipo" value="" />CAMISAS</li>
+                                    <li><input type="radio" name="tipo" value="" />BUZOS</li>
+                                    <li><input type="radio" name="tipo" value="" />CAMPERAS</li>
+                                    <li><input type="radio" name="tipo" value="" />PANTALONES</li>
+                                    <li><input type="radio" name="tipo" value="" />JEANS</li>
+                                    <li><input type="radio" name="tipo" value="" />SHORTS</li>
+                                    <li><input type="radio" name="tipo" value="" />BOXERS</li>
+                                </ul>
+
+                            </form>
                         </div>
                         <div class="filtro__expandido--precio">
-                            <h5>Precio:</h5>
+                            <h5>PRECIO:</h5>
+                            <div class="precio__rango">
+                                <span>$1.000</span>
+                                <span>$50.000</span>
+                            </div>
                             <span class="budget-input">
                                 <span class="monthly-budget" id="slider-span">
                                     <input id="budget-slider" class="budget-slider" type="range" name="budget-slider"
@@ -80,12 +97,16 @@
                             </span>
                         </div>
                         <div class="filtro__expandido--talle">
-                            <h5>Talle:</h5>
+                            <h5>TALLE:</h5>
+                            <div class="talle__btn">
+                                <a href="#" class="btn__medida">XS</a>
+                                <a href="#" class="btn__medida">S</a>
+                                <a href="#" class="btn__medida">M</a>
+                                <a href="#" class="btn__medida">L</a>
+                                <a href="#" class="btn__medida">XL</a>
+                                <a href="#" class="btn__medida">XXL</a>
+                            </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>
@@ -94,7 +115,7 @@
             <div class="recomendados__container">
                 <h4 class="recomendados__titulo">RECOMENDADOS</h4>
                 <div class="recomendados__productos">
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -103,7 +124,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -112,7 +133,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -121,7 +142,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -130,7 +151,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -139,7 +160,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -148,7 +169,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="recomendados__indumetaria">
+                    <div class="recomendados__card">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -162,9 +183,9 @@
 
             <!-------------------------- PRODUCTOS INDUMENTARIA ------------------>
             <div>
-                <h4 class="productos__titulo--indumentaria">PRODUCTOS</h4>
-                <div class="productos__container--indumentaria">
-                    <div class="productos__indumentaria">
+                <h4 class="productos__titulo--catalogo">PRODUCTOS</h4>
+                <div class="productos__container--catalogo">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -173,7 +194,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -182,7 +203,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -191,7 +212,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -200,7 +221,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -209,7 +230,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -218,7 +239,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -227,7 +248,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -236,7 +257,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -245,7 +266,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -254,7 +275,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -263,7 +284,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -272,7 +293,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -281,7 +302,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -290,7 +311,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>
@@ -299,7 +320,7 @@
                             <button class="btn__comprar"><a href="">Comprar</a></button>
                         </article>
                     </div>
-                    <div class="productos__indumentaria">
+                    <div class="productos__catalogo">
                         <article class="producto__tarjeta">
                             <img src="/img/remera-negra.png" alt="">
                             <hr>

@@ -203,6 +203,275 @@ hr {
     color: #EB5E28;
   }
 }
+/* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
+.recomendados__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__titulo {
+  color: #252422;
+  font-size: 25px;
+}
+
+.recomendados__productos {
+  grid-area: recomendados;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomendados__card:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 1100PX ------------------------------- */
+@media (min-width: 1100px) {
+  .recomendados__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .recomendados__titulo {
+    color: #252422;
+    font-size: 25px;
+  }
+  .recomendados__productos {
+    grid-area: recomendados;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  .recomendados__card:hover {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+/* -----------------------ESTRUCTURA DEL CATALOGO ---------------------------------- */
+.indumentaria__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas: "filtro" "recomendados" "productos";
+  gap: 30px;
+  justify-items: center;
+}
+
+.filtro__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  grid-area: filtro;
+}
+
+.filtro__contenido {
+  color: #252422;
+}
+.filtro__contenido button {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background: transparent;
+}
+.filtro__contenido button:hover {
+  border: 1px solid #252422;
+  border-radius: 2px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background-color: #252422;
+  color: #FFFCF2;
+}
+
+.filtro__expandido {
+  display: none;
+}
+
+.productos__titulo--catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #252422;
+  margin: 20px 0px;
+}
+
+.productos__container--catalogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: productos;
+}
+
+.productos__catalogo:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* -------------------------------- INICIO INDUMENTARIA RESPONSIVE 1100PX ------------------------------- */
+@media (min-width: 1100px) {
+  .titulo__indumentaria hr {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .catalogo__container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: "filtro recomendados" "filtro productos";
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+  .filtro__container {
+    display: flex;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 5px;
+    grid-area: filtro;
+  }
+  .filtro__container:hover {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  }
+  .filtro__contenido {
+    color: #252422;
+  }
+  .filtro__contenido .filtro__expandido {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 600px;
+    margin-left: 20px;
+    gap: 20px;
+    background-color: #fff;
+  }
+  .filtro__contenido .filtro__expandido h6 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .filtro__contenido .filtro__expandido--tipo h5 {
+    margin-left: 10px;
+  }
+  .filtro__contenido .filtro__expandido--precio h5 {
+    margin-left: 10px;
+  }
+  .filtro__contenido .filtro__expandido--talle .talle__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .filtro__contenido .filtro__expandido--talle .btn__medida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    color: black;
+  }
+  .filtro__contenido .filtro__expandido--talle a:focus {
+    border: 2px solid gray;
+    color: white;
+    background-color: black;
+  }
+  .filtro__contenido .filtro__expandido--color .talle__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .filtro__contenido .filtro__expandido--color .btn__medida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+  }
+  .filtro__contenido .filtro__expandido--color #rojo {
+    background-color: red;
+  }
+  .filtro__contenido .filtro__expandido--color #azul {
+    background-color: blue;
+  }
+  .filtro__contenido .filtro__expandido--color #amarillo {
+    background-color: yellow;
+  }
+  .filtro__contenido .filtro__expandido--color #verde {
+    background-color: green;
+  }
+  .filtro__contenido .filtro__expandido--color #negro {
+    background-color: black;
+  }
+  .filtro__contenido .filtro__expandido--color #blanco {
+    background-color: white;
+    border: 1px solid gray;
+  }
+  .filtro__contenido .filtro__expandido--color #blanco:focus {
+    border: 3px solid gray;
+  }
+  .filtro__contenido .filtro__expandido--color .btn__medida:hover {
+    transform: scale(1.12);
+  }
+  .filtro__contenido .filtro__expandido--color .btn__medida:focus {
+    border: 3px solid gray;
+  }
+  .filtro__contenido .tipo__radio ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filtro__contenido .tipo__radio ul li {
+    display: flex;
+    gap: 10px;
+  }
+  .filtro__contenido .precio__rango {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .filtro__contenido button {
+    display: none;
+  }
+  .productos__titulo--catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #252422;
+    margin: 0 0 18px;
+  }
+  .productos__container--catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    grid-area: productos;
+  }
+  .productos__catalogo:hover {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  }
+}
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
 .aviso__promociones-inicio {
   display: flex;
@@ -305,8 +574,8 @@ input[type=range].budget-slider {
 input[type=range].budget-slider::-webkit-slider-runnable-track {
   height: 8px;
   border-radius: 8px;
-  border: 1px solid #4C4C4C !important;
-  background: #6F6F6F -webkit-linear-gradient(top, #7A7A7B, #55575A);
+  border: 1px solid #252422 !important;
+  background: #252422;
 }
 
 input[type=range].budget-slider::-moz-range-track {
@@ -327,11 +596,11 @@ input[type=range].budget-slider::-ms-track {
 }
 
 input[type=range].budget-slider::-ms-fill-lower {
-  background: transparent;
+  background: #252422;
 }
 
 input[type=range].budget-slider::-ms-fill-upper {
-  background: transparent;
+  background: #252422;
 }
 
 input[type=range].budget-slider::-webkit-slider-thumb {
@@ -544,183 +813,6 @@ input[type=range].budget-slider::-moz-focus-outer {
   width: 80%;
 }
 
-/* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
-.indumentaria__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
-  grid-template-areas: "filtro" "recomendados" "productos";
-  gap: 30px;
-  justify-items: center;
-}
-
-.filtro__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  grid-area: filtro;
-}
-
-.filtro__contenido {
-  color: #252422;
-}
-.filtro__contenido button {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background: transparent;
-}
-.filtro__contenido button:hover {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background-color: #252422;
-  color: #FFFCF2;
-}
-
-.filtro__expandido {
-  display: none;
-}
-
-.recomendados__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__titulo {
-  color: #252422;
-  font-size: 25px;
-}
-
-.recomendados__productos {
-  grid-area: recomendados;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__indumetaria:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-.productos__titulo--indumentaria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: #252422;
-  margin: 20px 0px;
-}
-
-.productos__container--indumentaria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  grid-area: productos;
-}
-
-.productos__indumentaria:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-/* -------------------------------- INICIO INDUMENTARIA RESPONSIVE 1100PX ------------------------------- */
-@media (min-width: 1100px) {
-  .indumentaria__container {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-    grid-template-areas: "filtro recomendados" "filtro productos";
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-  }
-  .filtro__container {
-    display: flex;
-    justify-items: stretch;
-    align-items: stretch;
-    border-radius: 5px;
-    grid-area: filtro;
-  }
-  .filtro__contenido {
-    color: #252422;
-  }
-  .filtro__contenido .filtro__expandido {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 600px;
-    margin-left: 20px;
-    background-color: cornflowerblue;
-  }
-  .filtro__contenido .filtro__expandido h6 {
-    font-size: 26px;
-    text-align: center;
-  }
-  .filtro__contenido .filtro__expandido--tipo {
-    color: aqua;
-  }
-  .filtro__contenido button {
-    display: none;
-  }
-  .recomendados__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .recomendados__titulo {
-    color: #252422;
-    font-size: 25px;
-    margin: 0;
-  }
-  .recomendados__productos {
-    grid-area: recomendados;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .recomendados__indumetaria:hover {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-  }
-  .productos__titulo--indumentaria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: #252422;
-    margin: 0;
-  }
-  .productos__container--indumentaria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: stretch;
-    gap: 10px;
-    grid-area: productos;
-  }
-  .productos__indumentaria:hover {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-  }
-}
 /* -------------------------------- PAGINA CALZADO ---------------------------------- */
 .titulo__calzado {
   display: flex;
@@ -737,96 +829,7 @@ input[type=range].budget-slider::-moz-focus-outer {
   width: 80%;
 }
 
-/* -----------------------ESTRUCTURA DE CALZADO ---------------------------------- */
-.calzado__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
-  grid-template-areas: "filtro" "recomendados" "productos";
-  gap: 30px;
-  justify-items: center;
-}
-
-.filtro__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  grid-area: filtro;
-}
-
-.filtro__contenido {
-  color: #252422;
-}
-.filtro__contenido button {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background: transparent;
-}
-.filtro__contenido button:hover {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background-color: #252422;
-  color: #FFFCF2;
-}
-
-.recomendados__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__titulo {
-  color: #252422;
-  font-size: 25px;
-}
-
-.recomendados__productos {
-  grid-area: recomendados;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__calzado:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-.productos__titulo--calzado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: #252422;
-  margin: 20px 0px;
-}
-
-.productos__container--calzado {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  grid-area: productos;
-}
-
-.productos__calzado:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-/* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
+/* -------------------------------- PAGINA ACCESORIOS ---------------------------------- */
 .titulo__accesorios {
   display: flex;
   flex-direction: column;
@@ -840,95 +843,6 @@ input[type=range].budget-slider::-moz-focus-outer {
 .titulo__accesorios hr {
   margin-top: 20px;
   width: 80%;
-}
-
-/* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
-.accesorios__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
-  grid-template-areas: "filtro" "recomendados" "productos";
-  gap: 30px;
-  justify-items: center;
-}
-
-.filtro__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  grid-area: filtro;
-}
-
-.filtro__contenido {
-  color: #252422;
-}
-.filtro__contenido button {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background: transparent;
-}
-.filtro__contenido button:hover {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background-color: #252422;
-  color: #FFFCF2;
-}
-
-.recomendados__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__titulo {
-  color: #252422;
-  font-size: 25px;
-}
-
-.recomendados__productos {
-  grid-area: recomendados;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__accesorios:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-.productos__titulo--accesorios {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: #252422;
-  margin: 20px 0px;
-}
-
-.productos__container--accesorios {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  grid-area: productos;
-}
-
-.productos__accesorios:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
@@ -945,95 +859,6 @@ input[type=range].budget-slider::-moz-focus-outer {
 .titulo__promos hr {
   margin-top: 20px;
   width: 80%;
-}
-
-/* -----------------------ESTRUCTURA DE INDUMENTARIA ---------------------------------- */
-.promos__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
-  grid-template-areas: "filtro" "recomendados" "productos";
-  gap: 30px;
-  justify-items: center;
-}
-
-.filtro__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  grid-area: filtro;
-}
-
-.filtro__contenido {
-  color: #252422;
-}
-.filtro__contenido button {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background: transparent;
-}
-.filtro__contenido button:hover {
-  border: 1px solid #252422;
-  border-radius: 2px;
-  text-align: center;
-  width: 200px;
-  height: auto;
-  background-color: #252422;
-  color: #FFFCF2;
-}
-
-.recomendados__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__titulo {
-  color: #252422;
-  font-size: 25px;
-}
-
-.recomendados__productos {
-  grid-area: recomendados;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.recomendados__promos:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
-.productos__titulo--promos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: #252422;
-  margin: 20px 0px;
-}
-
-.productos__container--promos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  grid-area: productos;
-}
-
-.productos__promos:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*# sourceMappingURL=style.css.map */

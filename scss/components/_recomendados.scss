@@ -1,0 +1,66 @@
+/* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
+
+
+.recomendados__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.recomendados__titulo {
+    color: #252422;
+    font-size: 25px;
+}
+
+.recomendados__productos {
+    grid-area: recomendados;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.recomendados__card:hover {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+
+}
+
+
+/* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 1100PX ------------------------------- */
+@media (min-width: 1100px) {
+    .recomendados__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    
+    .recomendados__titulo {
+        color: #252422;
+        font-size: 25px;
+    }
+    
+    .recomendados__productos {
+        grid-area: recomendados;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    
+    .recomendados__card:hover {
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+    
+    }
+}
