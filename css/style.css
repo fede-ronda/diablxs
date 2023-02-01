@@ -789,8 +789,29 @@ input[type=range].budget-slider::-moz-focus-outer {
 }
 
 /* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
+@media (min-width: 480px) {
+  .carrusel {
+    display: flex;
+    justify-content: center;
+  }
+  .carrusel__img {
+    height: 210px;
+    width: auto;
+  }
+}
 /* -------------------------------- INICIO RESPONSIVE 768PX ------------------------------- */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
+  .carrusel {
+    display: flex;
+    justify-content: center;
+  }
+  .carrusel__img {
+    height: 300px;
+    width: auto;
+  }
+}
+/* -------------------------------- INICIO RESPONSIVE 1100PX ------------------------------- */
+@media (min-width: 1100px) {
   .carrusel {
     display: flex;
     justify-content: center;
