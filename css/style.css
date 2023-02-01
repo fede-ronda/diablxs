@@ -49,51 +49,57 @@ body {
   color: #FFFCF2;
 }
 
-.nav__sections {
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__lista {
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
-.nav__sections li {
+.nav__lista li {
   display: block;
   text-align: center;
   padding: 5px;
   transition-duration: 1s;
 }
-.nav__sections a {
-  color: #403D39;
+.nav__lista a {
+  color: #000000;
   border: 2px solid transparent;
 }
-.nav__sections a:hover {
-  color: #EB5E28;
-  border-bottom: 2px solid #EB5E28;
+.nav__lista a:hover {
+  color: #673AB7;
+  border-bottom: 2px solid #673AB7;
 }
-
-hr {
+.nav hr {
   width: 100%;
   margin-top: -15px;
 }
 
 /* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
 @media (min-width: 480px) {
-  .nav__sections {
+  .nav__lista {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 5px;
     padding: 0;
   }
-  .nav__sections li {
+  .nav__lista li {
     padding: 5px;
     transition-duration: 1s;
   }
-  .nav__sections a {
-    color: #403D39;
+  .nav__lista a {
+    color: #000000;
     border: 2px solid transparent;
   }
-  .nav__sections a:hover {
-    color: #EB5E28;
-    border-bottom: 2px solid #EB5E28;
+  .nav__lista a:hover {
+    color: #673AB7;
+    border-bottom: 2px solid #673AB7;
   }
-  hr {
+  .nav hr {
     width: 100%;
     margin-top: -15px;
   }
@@ -680,7 +686,7 @@ input[type=range].budget-slider::-moz-focus-outer {
   color: #000000;
 }
 
-.producto__tarjeta {
+.tarjeta {
   width: 200px;
   height: 300px;
   display: flex;
@@ -691,55 +697,34 @@ input[type=range].budget-slider::-moz-focus-outer {
   border-radius: 0px 0px 5px 5px;
   background-color: #fff;
 }
-.producto__tarjeta img {
-  width: 80%;
+.tarjeta__img {
+  width: 70%;
+  height: auto;
+  padding: 10px;
 }
-.producto__tarjeta hr {
+.tarjeta hr {
   margin: 0;
 }
-.producto__tarjeta h3 {
+.tarjeta h3 {
   font-size: 22px;
   margin: 0;
 }
-.producto__tarjeta span {
-  font-size: 22px;
-}
-
-/* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
-.tarjeta__carrusel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  gap: 10px;
-}
-.tarjeta__carrusel img {
-  width: 250px;
-}
-.tarjeta__carrusel hr {
-  width: 50%;
-  margin: 0;
-}
-.tarjeta__carrusel h3 {
-  margin: 0;
-  font-size: 28px;
-}
-.tarjeta__carrusel span {
+.tarjeta span {
   font-size: 22px;
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
-.titulo {
+.verano {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
 }
-.titulo h3 {
-  font-size: 25px;
+.verano__titulo {
+  font-size: 30px;
 }
-.titulo hr {
+.verano hr {
   margin-top: -5px;
   width: 80%;
 }
@@ -755,18 +740,18 @@ input[type=range].budget-slider::-moz-focus-outer {
 }
 
 /* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
-.titulo__productos-inicio {
+.destacado {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
 }
-.titulo__productos-inicio h4 {
+.destacado__titulo {
   font-size: 25px;
   margin-top: 50px;
 }
-.titulo__productos-inicio hr {
+.destacado hr {
   margin-top: -5px;
   width: 80%;
 }
@@ -778,12 +763,11 @@ input[type=range].budget-slider::-moz-focus-outer {
   align-items: center;
   gap: 10px;
 }
-.seccion__productos {
+.seccion__destacado {
   display: flex;
   overflow: auto;
-  grid-area: producto;
 }
-.seccion__productos:hover {
+.seccion__destacado:hover {
   border-radius: 0px 0px 5px 5px;
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }

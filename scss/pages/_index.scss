@@ -1,14 +1,14 @@
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
 
-.titulo {
+.verano {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
 
-    h3 {
-        font-size: 25px;
+    &__titulo {
+        font-size: 30px;
     }
 
     hr {
@@ -32,14 +32,14 @@
 
 /* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
 
-.titulo__productos-inicio {
+.destacado {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
 
-    h4 {
+    &__titulo {
         font-size: 25px;
         margin-top: 50px;
     }
@@ -58,15 +58,14 @@
     align-items: center;
     gap: 10px;
 
-    &__productos {
+    &__destacado {
         display: flex;
         overflow: auto;
-        grid-area: producto;
 
 
     }
 
-    &__productos:hover{
+    &__destacado:hover{
         border-radius: 0px 0px 5px 5px;
         box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.35);
 
