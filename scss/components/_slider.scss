@@ -17,8 +17,8 @@ input[type='range'].budget-slider {
 input[type='range'].budget-slider::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 8px;
-    border: 1px solid $color-cuaternario !important;
-    background: $color-cuaternario;
+    border: 1px solid $color-violeta !important;
+    background: $color-violeta;
 }
 
 input[type='range'].budget-slider::-moz-range-track {
@@ -39,11 +39,11 @@ input[type='range'].budget-slider::-ms-track {
 }
 
 input[type="range"].budget-slider::-ms-fill-lower {
-    background: $color-cuaternario;
+    background: $color-violeta;
 }
 
 input[type="range"].budget-slider::-ms-fill-upper {
-    background: $color-cuaternario;
+    background: $color-violeta;
 }
 
 input[type='range'].budget-slider::-webkit-slider-thumb {

@@ -5,32 +5,39 @@
     input{
         padding: 2px 10px;
         background: transparent;
-        border: 1px solid $color-cuaternario;
+        border: 1px solid $color-negro;
     }
 
     input:hover{
         padding: 2px 10px;
-        color: $color-primario;
-        background: $color-cuaternario;
-        border: 1px solid $color-cuaternario;
+        color: $color-blanco;
+        background: $color-violeta;
+        border: 1px solid $color-violeta;
     }
 }
 
 /* ----------- BOTON COMPRAR ----------- */
 .btn__comprar{
-    border: 1px solid $color-cuaternario;
+    border: 1px solid $color-violeta;
     border-radius: 5px;
     padding: 2px 5px;
-    background: $color-cuaternario;
+    background: $color-violeta;
 
     a{
-        color: $color-primario;
+        color: $color-blanco;
     }
     a:hover{
-        color: $color-cuaternario;
+        color: $color-violeta;
     }
 }
 
 .btn__comprar:hover{
     background: transparent;
 }
+
+.carrusel__btn{
+    border: 1px solid $color-negro;
+    padding: 2px 5px;
+    color: $color-negro;
+}
+

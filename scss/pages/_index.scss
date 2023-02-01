@@ -19,30 +19,16 @@
 
 /* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
 
-.tarjeta__carrusel {
+.carrusel{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    gap: 10px;
+    justify-content: center;
 
-    img {
-        width: 250px;
-    }
-
-    hr{
-        margin: 0;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
-
-    span {
-        font-size: 22px;
+    &__img{
+        height: 150px;
+        width: auto;     
     }
 }
+
 
 /* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
 
@@ -100,5 +86,14 @@
 
 @media (min-width: 768px) {
 
+    .carrusel{
+        display: flex;
+        justify-content: center;
+    
+        &__img{
+            height: 500px;
+            width: auto;     
+        }
+    }
 
 }

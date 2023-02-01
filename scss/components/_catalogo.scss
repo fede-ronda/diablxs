@@ -24,10 +24,10 @@
 }
 
 .filtro__contenido {
-    color: $color-cuaternario;
+    color: $color-violeta;
 
     button{
-        border: 1px solid $color-cuaternario;
+        border: 1px solid $color-violeta;
         border-radius: 2px;
         text-align: center;
         width: 200px;
@@ -36,13 +36,13 @@
     }
 
     button:hover{
-        border: 1px solid $color-cuaternario;
+        border: 1px solid $color-violeta;
         border-radius: 2px;
         text-align: center;
         width: 200px;
         height: auto;
-        background-color: $color-cuaternario;
-        color: $color-primario;
+        background-color: $color-violeta;
+        color: $color-blanco;
     }
 }
 
@@ -118,7 +118,7 @@
     }
     
     .filtro__contenido {
-        color: $color-cuaternario;
+        color: $color-violeta;
         
 
         .filtro__expandido{
