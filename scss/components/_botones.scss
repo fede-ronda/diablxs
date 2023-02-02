@@ -1,7 +1,8 @@
 /* ----------- BOTONES ----------- */
 
 /* ----------- BOTON ENVIAR----------- */
-.btn__enviar{
+.btn-enviar{
+
     input{
         padding: 2px 10px;
         background: transparent;
@@ -10,9 +11,9 @@
 
     input:hover{
         padding: 2px 10px;
-        color: $color-blanco;
-        background: $color-violeta;
-        border: 1px solid $color-violeta;
+        color: $color-negro;
+        background: $color-gris;
+        border: 1px solid $color-negro;
     }
 }
 
