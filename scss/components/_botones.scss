@@ -11,14 +11,14 @@
 
     input:hover{
         padding: 2px 10px;
-        color: $color-negro;
-        background: $color-gris;
+        color: $color-blanco;
+        background: $color-negro;
         border: 1px solid $color-negro;
     }
 }
 
 /* ----------- BOTON COMPRAR ----------- */
-.btn__comprar{
+.btn-comprar{
     border: 1px solid $color-violeta;
     border-radius: 5px;
     padding: 2px 5px;
@@ -32,13 +32,6 @@
     }
 }
 
-.btn__comprar:hover{
+.btn-comprar:hover{
     background: transparent;
 }
-
-.carrusel__btn{
-    border: 1px solid $color-negro;
-    padding: 2px 5px;
-    color: $color-negro;
-}
-

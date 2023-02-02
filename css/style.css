@@ -182,25 +182,11 @@ body {
     align-items: center;
     gap: 10px;
   }
-  .newsletter__email input {
-    height: 30px;
-    background: transparent;
-    outline: none;
-    border: 1px solid #673AB7;
-    text-align: center;
-  }
   .footer__lista ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    color: #FFFFFF;
     padding: 0;
-  }
-  .footer__lista ul a {
-    color: #FFFFFF;
-  }
-  .footer__lista ul a:hover {
-    color: #673AB7;
   }
 }
 /* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
@@ -504,45 +490,14 @@ body {
   justify-content: center;
 }
 
-/* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
 /* -------------------------------- INICIO RESPONSIVE 768PX ------------------------------- */
 @media (min-width: 768px) {
-  .aviso__promociones-inicio {
+  .aviso {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  .aviso__promociones-inicio .aviso__cuotas-1 {
-    padding: 10px;
-    background-color: #252422;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-  }
-  .aviso__promociones-inicio .aviso__cuotas-1:hover {
-    background-color: #EB5E28;
-    transform: scale(1.04);
-  }
-  .aviso__promociones-inicio .aviso__cuotas-2 {
-    padding: 10px;
-    background-color: #252422;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-  }
-  .aviso__promociones-inicio .aviso__cuotas-2:hover {
-    background-color: #EB5E28;
-    transform: scale(1.04);
-  }
-  .aviso__promociones-inicio a {
-    color: #FFFCF2;
-  }
-  .aviso__promociones-inicio h4 {
-    font-size: 30px;
-  }
-  .aviso__promociones-inicio span {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
+    gap: 50px;
   }
 }
 .budget-input {
@@ -642,33 +597,27 @@ input[type=range].budget-slider::-moz-focus-outer {
 }
 .btn-enviar input:hover {
   padding: 2px 10px;
-  color: #000000;
-  background: #E0E0E0;
+  color: #FFFFFF;
+  background: #000000;
   border: 1px solid #000000;
 }
 
 /* ----------- BOTON COMPRAR ----------- */
-.btn__comprar {
+.btn-comprar {
   border: 1px solid #673AB7;
   border-radius: 5px;
   padding: 2px 5px;
   background: #673AB7;
 }
-.btn__comprar a {
+.btn-comprar a {
   color: #FFFFFF;
 }
-.btn__comprar a:hover {
+.btn-comprar a:hover {
   color: #673AB7;
 }
 
-.btn__comprar:hover {
+.btn-comprar:hover {
   background: transparent;
-}
-
-.carrusel__btn {
-  border: 1px solid #000000;
-  padding: 2px 5px;
-  color: #000000;
 }
 
 .tarjeta {
@@ -678,24 +627,35 @@ input[type=range].budget-slider::-moz-focus-outer {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  gap: 10px;
   border-radius: 0px 0px 5px 5px;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .tarjeta__img {
   width: 70%;
   height: auto;
   padding: 10px;
-}
-.tarjeta hr {
   margin: 0;
 }
 .tarjeta h3 {
+  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+  text-align: center;
   font-size: 22px;
   margin: 0;
+  padding-bottom: 5px;
 }
-.tarjeta span {
-  font-size: 22px;
+.tarjeta__descrip {
+  width: 100%;
+  text-align: start;
+  margin-left: 30%;
+  font-size: 14px;
+}
+.tarjeta button {
+  margin-top: 10px;
+}
+.tarjeta:hover {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
@@ -747,14 +707,6 @@ input[type=range].budget-slider::-moz-focus-outer {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-.seccion__destacado {
-  display: flex;
-  overflow: auto;
-}
-.seccion__destacado:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
