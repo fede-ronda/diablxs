@@ -31,3 +31,29 @@
     color: $color-negro;
     background: transparent;
 }
+
+
+.talle__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $color-negro;
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    color: $color-negro;
+
+    
+}
+
+.talle__btn:hover{
+    color: $color-negro;
+    background: rgba($color-violeta, 0.5);
+}
+
+
+.talle__btn:focus {
+    border: 2px solid $color-violeta;
+    color: $color-violeta;
+}
+

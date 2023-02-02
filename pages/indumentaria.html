@@ -23,7 +23,7 @@
 
     <header>
         <div class="header">
-            <h2>Marca</h2>
+            <img class="header__logo" src="../img/logo/diablxs-logo.png" alt="diablos">
             <div class="header__icons">
                 <i class="bi bi-search"></i>
                 <i class="bi bi-person-fill"></i>
@@ -32,10 +32,8 @@
 
         </div>
 
-
-        <div>
-            <nav>
-                <ul class="nav__sections">
+            <nav class="nav">
+                <ul class="nav__lista">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/indumentaria.html">Indumentaria</a></li>
                     <li><a href="../pages/calzado.html">Calzado</a></li>
@@ -44,7 +42,6 @@
                 </ul>
             </nav>
             <hr>
-        </div>
     </header>
 
     <!----------------------------- INICIO MAIN -------------------------------->
@@ -53,58 +50,69 @@
 
         <!----------------------- TITULO INDUMENTARIA ------------------------------>
 
-        <div class="titulo__indumentaria">
-            <h3>INDUMENTARIA</h3>
+        <div class="titulo">
+            <h1>INDUMENTARIA</h1>
             <hr>
         </div>
 
         <!-------------------------- ESTRUCTURA INDUMENTARIA ------------------------>
 
         <!----------------------- FILTRO INDUMENTARIA ------------------------------->
-        <div class="catalogo__container">
-            <div class="filtro__container">
+        <div class="catalogo">
+            <div class="filtro">
                 <div class="filtro__contenido">
                     <button>Filtro +</button>
                     <div class="filtro__expandido">
-                        <h6>FILTRAR POR:</h6>
+                        <span>FILTRAR POR:</span>
                         <div class="filtro__expandido--tipo">
-                            <h5>TIPO:</h5>
-                            <form class="tipo__radio" name="formulario" method="post" action="">
+                            <span>TIPO:</span>
+                            <form class="radio" name="formulario" method="post" action="">
                                 <ul>
-                                    <li><input type="radio" name="tipo" value="" />REMERAS</li>
-                                    <li><input type="radio" name="tipo" value="" />CAMISAS</li>
-                                    <li><input type="radio" name="tipo" value="" />BUZOS</li>
-                                    <li><input type="radio" name="tipo" value="" />CAMPERAS</li>
-                                    <li><input type="radio" name="tipo" value="" />PANTALONES</li>
-                                    <li><input type="radio" name="tipo" value="" />JEANS</li>
-                                    <li><input type="radio" name="tipo" value="" />SHORTS</li>
-                                    <li><input type="radio" name="tipo" value="" />BOXERS</li>
+                                    <li><input type="radio" name="tipo" value="remeras" />REMERAS</li>
+                                    <li><input type="radio" name="tipo" value="camisas" />CAMISAS</li>
+                                    <li><input type="radio" name="tipo" value="buzos" />BUZOS</li>
+                                    <li><input type="radio" name="tipo" value="camperas" />CAMPERAS</li>
+                                    <li><input type="radio" name="tipo" value="pantalones" />PANTALONES</li>
+                                    <li><input type="radio" name="tipo" value="jeans" />JEANS</li>
+                                    <li><input type="radio" name="tipo" value="shorts" />SHORTS</li>
+                                    <li><input type="radio" name="tipo" value="boxers" />BOXERS</li>
                                 </ul>
 
                             </form>
                         </div>
                         <div class="filtro__expandido--precio">
-                            <h5>PRECIO:</h5>
-                            <div class="precio__rango">
+                            <span>PRECIO:</span>
+                            <div class="rango">
                                 <span>$1.000</span>
                                 <span>$50.000</span>
                             </div>
-                            <span class="budget-input">
-                                <span class="monthly-budget" id="slider-span">
+                            <div class="budget-input">
+                                <div class="monthly-budget" id="slider-span">
                                     <input id="budget-slider" class="budget-slider" type="range" name="budget-slider"
                                         value="20.00" min="5" max="50" step="0.5" />
-                                </span>
-                            </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="filtro__expandido--talle">
-                            <h5>TALLE:</h5>
-                            <div class="talle__btn">
-                                <a href="#" class="btn__medida">XS</a>
-                                <a href="#" class="btn__medida">S</a>
-                                <a href="#" class="btn__medida">M</a>
-                                <a href="#" class="btn__medida">L</a>
-                                <a href="#" class="btn__medida">XL</a>
-                                <a href="#" class="btn__medida">XXL</a>
+                            <span>TALLE:</span>
+                            <div class="talle">
+                                <a href="#" class="talle__btn">XS</a>
+                                <a href="#" class="talle__btn">S</a>
+                                <a href="#" class="talle__btn">M</a>
+                                <a href="#" class="talle__btn">L</a>
+                                <a href="#" class="talle__btn">XL</a>
+                                <a href="#" class="talle__btn">XXL</a>
+                            </div>
+                        </div>
+                        <div class="filtro__expandido--color">
+                            <span>COLOR:</span>
+                            <div class="color">
+                                <a href="#" class="btn__medida" id="rojo"></a>
+                                <a href="#" class="btn__medida" id="azul"></a>
+                                <a href="#" class="btn__medida" id="amarillo"></a>
+                                <a href="#" class="btn__medida" id="verde"></a>
+                                <a href="#" class="btn__medida" id="negro"></a>
+                                <a href="#" class="btn__medida" id="blanco"></a>
                             </div>
                         </div>
                     </div>
@@ -112,226 +120,297 @@
             </div>
 
             <!-------------------- SECCION RECOMENDADOS ------------------------------->
-            <div class="recomendados__container">
-                <h4 class="recomendados__titulo">RECOMENDADOS</h4>
+            <section class="recomendados">
+                <h2 class="recomendados__titulo">RECOMENDADOS</h2>
                 <div class="recomendados__productos">
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="recomendados__card">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-negro.png" alt="">
+                        <h3>Buzo Negro</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-azul.png" alt="">
+                        <h3>Buzo Azul</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/campera-negro.png" alt="">
+                        <h3>Campera Negra</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$9.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/campera-rojo.png" alt="">
+                        <h3>Campera Roja</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$9.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/pantalon-amarillo.png" alt="">
+                        <h3>Pantalon Beige</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>39</strong> al <strong>46</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$4.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-negro.png" alt="">
+                        <h3>Remera Negra</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
                 </div>
-            </div>
+            </section>
 
             <!-------------------------- PRODUCTOS INDUMENTARIA ------------------>
-            <div>
-                <h4 class="productos__titulo--catalogo">PRODUCTOS</h4>
-                <div class="productos__container--catalogo">
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
-                    <div class="productos__catalogo">
-                        <article class="producto__tarjeta">
-                            <img src="../img/remera-negra.png" alt="">
-                            <hr>
-                            <h3>Remera Negra L</h3>
-                            <span>$1.999</span>
-                            <button class="btn__comprar"><a href="">Comprar</a></button>
-                        </article>
-                    </div>
+            <section class="productos">
+                <h3 class="productos__titulo">PRODUCTOS</h3>
+                <div class="productos__container">
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-azul.png" alt="">
+                        <h3>Buzo Azul</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-negro.png" alt="">
+                        <h3>Buzo Negro</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-violeta.png" alt="">
+                        <h3>Buzo Violeta</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-verde.png" alt="">
+                        <h3>Buzo Verde</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-blanco.png" alt="">
+                        <h3>Buzo Blanco</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/buzo-rojo.png" alt="">
+                        <h3>Buzo Rojo</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$5.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/campera-azul.png" alt="">
+                        <h3>Campera Azul</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$9.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/campera-blanco.png" alt="">
+                        <h3>Campera Blanca</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$9.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+                    
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/campera-negro.png" alt="">
+                        <h3>Campera Negra</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$9.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/campera-rojo.png" alt="">
+                        <h3>Campera Roja</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$9.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/pantalon-amarillo.png" alt="">
+                        <h3>Pantalon Beige</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$4.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/pantalon-azul.png" alt="">
+                        <h3>Pantalon Azul</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>39</strong> al <strong>46</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$4.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/pantalon-celeste.png" alt="">
+                        <h3>Pantalon Celeste</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>39</strong> al <strong>46</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$4.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/pantalon-negro.png" alt="">
+                        <h3>Pantalon Negro</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>39</strong> al <strong>46</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$4.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/pantalon-verde.png" alt="">
+                        <h3>Pantalon Verde</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>39</strong> al <strong>46</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$4.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-amarillo.png" alt="">
+                        <h3>Remera Amarilla</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-azul.png" alt="">
+                        <h3>Remera Azul</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-blanco.png" alt="">
+                        <h3>Remera Blanca</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-negro.png" alt="">
+                        <h3>Remera Negra</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-rojo.png" alt="">
+                        <h3>Remera Roja</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-verde.png" alt="">
+                        <h3>Remera Verde</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img class="tarjeta__img" src="../img/indumentaria/remera-violeta.png" alt="">
+                        <h3>Remera Violeta</h3>
+                        <span class="tarjeta__descrip">Marca: <strong>DIABLXS</strong></span>
+                        <span class="tarjeta__descrip">Talle: <strong>M</strong> al <strong>XL</strong></span>
+                        <span class="tarjeta__descrip">Precio: <strong>$2.999</strong></span>
+                        <span class="tarjeta__descrip">Efectivo: <strong>10% OFF</strong> </span>
+                        <a class="btn-comprar" href="">Comprar</a>
+                    </article>
                 </div>
 
-            </div>
+            </section>
 
         </div>
 
@@ -340,15 +419,15 @@
 
         <!--------------------- INICIO AVISO DE CUOTAS -------------------->
 
-        <section class="aviso__promociones-inicio">
-            <div class="aviso__cuotas-1">
-                <a href="./pages/promociones.html">
+        <section class="aviso">
+            <div class="aviso__cuotas">
+                <a href="../pages/promociones.html">
                     <h4>3 cuotas sin interés</h4>
                     <span>en todas tus compras</span>
                 </a>
             </div>
-            <div class="aviso__cuotas-2">
-                <a href="./pages/promociones.html">
+            <div class="aviso__cuotas">
+                <a href="../pages/promociones.html">
                     <h4>6 cuotas sin interés</h4>
                     <span>en compras superiores a $15.000</span>
                 </a>
@@ -364,7 +443,7 @@
     <!----------------------------- FOOTER ---------------------------->
 
     <footer>
-        <div class="footer__newsletter">
+        <div class="newsletter">
             <div class="newsletter__title">
                 <h5>SUSCRIBITE A NUESTRO <strong>NEWSLETTER</strong></h5>
                 <span>Recibí novedades y promociones antes que nadie</span>
@@ -375,13 +454,13 @@
                         <label for="email-usuario"></label>
                         <input type="email" id="email-usuario" placeholder="Ingresá tu mail">
                     </div>
-                    <div class="btn__enviar">
+                    <div class="btn-enviar">
                         <input type="submit" value="Enviar">
                     </div>
                 </form>
             </div>
         </div>
-        <div class="footer__container">
+        <div class="footer">
             <div class="footer__icons">
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>

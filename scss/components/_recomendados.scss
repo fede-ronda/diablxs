@@ -1,66 +1,55 @@
 /* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
 
 
-.recomendados__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.recomendados {
 
-}
 
-.recomendados__titulo {
-    color: #252422;
-    font-size: 25px;
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: $color-negro;
+        font-weight: 600;
+        font-size: 25px;
+
+        
+    }
+
+
 }
 
 .recomendados__productos {
-    grid-area: recomendados;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-}
-
-.recomendados__card:hover {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-
 }
 
 
 /* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 1100PX ------------------------------- */
 @media (min-width: 1100px) {
-    .recomendados__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    
+
+    .recomendados {
+        margin-left: 40px;
+
+        &__titulo {
+            margin: 20px 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
     }
-    
-    .recomendados__titulo {
-        color: #252422;
-        font-size: 25px;
-    }
-    
+
     .recomendados__productos {
         grid-area: recomendados;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         gap: 10px;
-    
-    }
-    
-    .recomendados__card:hover {
-        border-radius: 0px 0px 5px 5px;
-        box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-    
+
+
     }
 }

@@ -189,22 +189,42 @@ body {
     padding: 0;
   }
 }
-/* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
-.recomendados__container {
+.titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  padding: 20px 0px;
+}
+.titulo h1 {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0px 8px;
+  font-weight: 1000;
+  font-size: 45px;
+  -moz-transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  -o-transform: skew(-10deg, 0deg);
+  -ms-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+}
+.titulo hr {
+  margin-top: 20px;
+  width: 80%;
 }
 
+/* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
 .recomendados__titulo {
-  color: #252422;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #000000;
+  font-weight: 600;
   font-size: 25px;
 }
 
 .recomendados__productos {
-  grid-area: recomendados;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -212,53 +232,31 @@ body {
   gap: 10px;
 }
 
-.recomendados__card:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-}
-
 /* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 1100PX ------------------------------- */
 @media (min-width: 1100px) {
-  .recomendados__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  .recomendados {
+    margin-left: 40px;
   }
   .recomendados__titulo {
-    color: #252422;
-    font-size: 25px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
   }
   .recomendados__productos {
     grid-area: recomendados;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
-  .recomendados__card:hover {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-  }
 }
 /* -----------------------ESTRUCTURA DEL CATALOGO ---------------------------------- */
-.indumentaria__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
-  grid-template-areas: "filtro" "recomendados" "productos";
-  gap: 30px;
-  justify-items: center;
-}
-
-.filtro__container {
+.filtro {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  grid-area: filtro;
 }
 
 .filtro__contenido {
@@ -286,36 +284,26 @@ body {
   display: none;
 }
 
-.productos__titulo--catalogo {
+.productos__titulo {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  color: #252422;
+  font-weight: 600;
+  color: #000000;
   margin: 20px 0px;
 }
-
-.productos__container--catalogo {
+.productos__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  grid-area: productos;
-}
-
-.productos__catalogo:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* -------------------------------- INICIO INDUMENTARIA RESPONSIVE 1100PX ------------------------------- */
 @media (min-width: 1100px) {
-  .titulo__indumentaria hr {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .catalogo__container {
+  .catalogo {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 2;
@@ -324,67 +312,65 @@ body {
     align-items: start;
     gap: 20px;
   }
-  .filtro__container {
+  .filtro {
     display: flex;
     justify-items: stretch;
     align-items: stretch;
     border-radius: 5px;
     grid-area: filtro;
   }
-  .filtro__container:hover {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
-  }
   .filtro__contenido {
-    color: #673AB7;
+    color: #000000;
   }
-  .filtro__contenido .filtro__expandido {
+  .filtro__expandido {
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 600px;
+    height: 670px;
     margin-left: 20px;
     gap: 20px;
-    background-color: #fff;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
   }
-  .filtro__contenido .filtro__expandido h6 {
-    font-size: 26px;
+  .filtro__expandido span {
+    font-size: 28px;
+    font-weight: 800;
     text-align: center;
   }
-  .filtro__contenido .filtro__expandido--tipo h5 {
+  .filtro__expandido--tipo span {
+    font-size: 20px;
+    font-weight: 600;
     margin-left: 10px;
   }
-  .filtro__contenido .filtro__expandido--precio h5 {
+  .filtro__expandido--precio span {
+    font-size: 20px;
+    font-weight: 600;
     margin-left: 10px;
   }
-  .filtro__contenido .filtro__expandido--talle .talle__btn {
+  .filtro__expandido--talle span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .filtro__expandido--talle .talle {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
   }
-  .filtro__contenido .filtro__expandido--talle .btn__medida {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    color: black;
+  .filtro__expandido--color span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
   }
-  .filtro__contenido .filtro__expandido--talle a:focus {
-    border: 2px solid gray;
-    color: white;
-    background-color: black;
-  }
-  .filtro__contenido .filtro__expandido--color .talle__btn {
+  .filtro__expandido--color .color {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
   }
-  .filtro__contenido .filtro__expandido--color .btn__medida {
+  .filtro__expandido--color .btn__medida {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,70 +378,66 @@ body {
     width: 35px;
     height: 35px;
   }
-  .filtro__contenido .filtro__expandido--color #rojo {
+  .filtro__expandido--color #rojo {
     background-color: red;
   }
-  .filtro__contenido .filtro__expandido--color #azul {
+  .filtro__expandido--color #azul {
     background-color: blue;
   }
-  .filtro__contenido .filtro__expandido--color #amarillo {
+  .filtro__expandido--color #amarillo {
     background-color: yellow;
   }
-  .filtro__contenido .filtro__expandido--color #verde {
+  .filtro__expandido--color #verde {
     background-color: green;
   }
-  .filtro__contenido .filtro__expandido--color #negro {
+  .filtro__expandido--color #negro {
     background-color: black;
   }
-  .filtro__contenido .filtro__expandido--color #blanco {
+  .filtro__expandido--color #blanco {
     background-color: white;
     border: 1px solid gray;
   }
-  .filtro__contenido .filtro__expandido--color #blanco:focus {
+  .filtro__expandido--color #blanco:focus {
     border: 3px solid gray;
   }
-  .filtro__contenido .filtro__expandido--color .btn__medida:hover {
+  .filtro__expandido--color .btn__medida:hover {
     transform: scale(1.12);
   }
-  .filtro__contenido .filtro__expandido--color .btn__medida:focus {
+  .filtro__expandido--color .btn__medida:focus {
     border: 3px solid gray;
   }
-  .filtro__contenido .tipo__radio ul {
+  .radio ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .filtro__contenido .tipo__radio ul li {
+  .radio ul li {
     display: flex;
     gap: 10px;
   }
-  .filtro__contenido .precio__rango {
+  .rango {
     display: flex;
     justify-content: space-between;
     padding: 5px;
   }
-  .filtro__contenido button {
+  button {
     display: none;
   }
-  .productos__titulo--catalogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: #252422;
-    margin: 0 0 18px;
+  .productos {
+    margin-left: 40px;
   }
-  .productos__container--catalogo {
+  .productos__titulo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .productos__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
     grid-area: productos;
-  }
-  .productos__catalogo:hover {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+    width: 70vw;
   }
 }
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
@@ -617,6 +599,27 @@ input[type=range].budget-slider::-moz-focus-outer {
   background: transparent;
 }
 
+.talle__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  color: #000000;
+}
+
+.talle__btn:hover {
+  color: #000000;
+  background: rgba(103, 58, 183, 0.5);
+}
+
+.talle__btn:focus {
+  border: 2px solid #673AB7;
+  color: #673AB7;
+}
+
 .tarjeta {
   width: 200px;
   height: 320px;
@@ -746,54 +749,6 @@ input[type=range].budget-slider::-moz-focus-outer {
     width: auto;
   }
 }
-/* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
-.titulo__indumentaria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-}
-.titulo__indumentaria h3 {
-  font-size: 25px;
-}
-.titulo__indumentaria hr {
-  margin-top: 20px;
-  width: 80%;
-}
-
-/* -------------------------------- PAGINA CALZADO ---------------------------------- */
-.titulo__calzado {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-}
-.titulo__calzado h3 {
-  font-size: 25px;
-}
-.titulo__calzado hr {
-  margin-top: 20px;
-  width: 80%;
-}
-
-/* -------------------------------- PAGINA ACCESORIOS ---------------------------------- */
-.titulo__accesorios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-}
-.titulo__accesorios h3 {
-  font-size: 25px;
-}
-.titulo__accesorios hr {
-  margin-top: 20px;
-  width: 80%;
-}
-
 /* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
 .titulo__promos {
   display: flex;
