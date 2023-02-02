@@ -19,19 +19,15 @@
 
 /* ----------- BOTON COMPRAR ----------- */
 .btn-comprar{
-    border: 1px solid $color-violeta;
-    border-radius: 5px;
+    border: 1px solid $color-negro;
+    border-radius: 3px;
     padding: 2px 5px;
-    background: $color-violeta;
-
-    a{
-        color: $color-blanco;
-    }
-    a:hover{
-        color: $color-violeta;
-    }
+    background: $color-negro;
+    color: $color-blanco;
+    margin-top: 5px;
 }
 
 .btn-comprar:hover{
+    color: $color-negro;
     background: transparent;
 }
