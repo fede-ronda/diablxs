@@ -1,6 +1,6 @@
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
 
-.aviso__promociones-inicio {
+.aviso {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,30 +9,20 @@
     margin-bottom: 50px;
     gap: 30px;
 
-    .aviso__cuotas-1{
-        padding: 10px;
-        background-color: #252422;
+    .aviso__cuotas{
+        background-color: transparent;
+        border: 1px solid $color-negro;
         border-radius: 10px;
-        transition-duration: 0.5s;
-        &:hover{
-            background-color: #EB5E28;
-            transform: scale(1.04);
-        }
-    }
-
-    .aviso__cuotas-2 {
         padding: 10px;
-        background-color: #252422;
-        border-radius: 10px;
         transition-duration: 0.5s;
+        
         &:hover{
-            background-color: #EB5E28;
             transform: scale(1.04);
         }
     }
 
     a {
-        color: #FFFCF2;
+        color: $color-negro;
     }
     h4{
         font-size: 30px;

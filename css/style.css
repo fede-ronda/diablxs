@@ -478,7 +478,7 @@ body {
   }
 }
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
-.aviso__promociones-inicio {
+.aviso {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,33 +487,23 @@ body {
   margin-bottom: 50px;
   gap: 30px;
 }
-.aviso__promociones-inicio .aviso__cuotas-1 {
-  padding: 10px;
-  background-color: #252422;
+.aviso .aviso__cuotas {
+  background-color: transparent;
+  border: 1px solid #000000;
   border-radius: 10px;
+  padding: 10px;
   transition-duration: 0.5s;
 }
-.aviso__promociones-inicio .aviso__cuotas-1:hover {
-  background-color: #EB5E28;
+.aviso .aviso__cuotas:hover {
   transform: scale(1.04);
 }
-.aviso__promociones-inicio .aviso__cuotas-2 {
-  padding: 10px;
-  background-color: #252422;
-  border-radius: 10px;
-  transition-duration: 0.5s;
+.aviso a {
+  color: #000000;
 }
-.aviso__promociones-inicio .aviso__cuotas-2:hover {
-  background-color: #EB5E28;
-  transform: scale(1.04);
-}
-.aviso__promociones-inicio a {
-  color: #FFFCF2;
-}
-.aviso__promociones-inicio h4 {
+.aviso h4 {
   font-size: 30px;
 }
-.aviso__promociones-inicio span {
+.aviso span {
   font-size: 16px;
   display: flex;
   justify-content: center;
