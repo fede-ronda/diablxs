@@ -24,3 +24,58 @@
         width: 80%;
     }
 }
+
+.verano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+    &__titulo {
+        background-color: $color-negro;
+        color: $color-blanco;
+        padding: 0px 8px;
+        font-weight: 1000;
+        font-size: 45px;
+        
+        -moz-transform: skew(-10deg, 0deg);
+        -webkit-transform: skew(-10deg, 0deg);
+        -o-transform: skew(-10deg, 0deg);
+        -ms-transform: skew(-10deg, 0deg);
+        transform: skew(-10deg, 0deg);
+    }
+
+    hr {
+        margin-top: 5px;
+        width: 80%;
+    }
+}
+
+.destacado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+
+    &__titulo {
+        background-color: $color-negro;
+        color: $color-blanco;
+        padding: 0px 8px;
+        margin-top: 20px;
+        font-weight: 1000;
+        font-size: 35px;
+        
+        -moz-transform: skew(-10deg, 0deg);
+        -webkit-transform: skew(-10deg, 0deg);
+        -o-transform: skew(-10deg, 0deg);
+        -ms-transform: skew(-10deg, 0deg);
+        transform: skew(-10deg, 0deg);
+    }
+
+    hr {
+        margin-top: 5px;
+        width: 80%;
+    }
+}

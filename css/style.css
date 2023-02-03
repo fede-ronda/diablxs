@@ -61,7 +61,6 @@ body {
   padding: 0;
 }
 .nav__lista li {
-  display: block;
   text-align: center;
   padding: 5px;
   transition-duration: 1s;
@@ -214,6 +213,55 @@ body {
   width: 80%;
 }
 
+.verano {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.verano__titulo {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0px 8px;
+  font-weight: 1000;
+  font-size: 45px;
+  -moz-transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  -o-transform: skew(-10deg, 0deg);
+  -ms-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+}
+.verano hr {
+  margin-top: 5px;
+  width: 80%;
+}
+
+.destacado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.destacado__titulo {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0px 8px;
+  margin-top: 20px;
+  font-weight: 1000;
+  font-size: 35px;
+  -moz-transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  -o-transform: skew(-10deg, 0deg);
+  -ms-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+}
+.destacado hr {
+  margin-top: 5px;
+  width: 80%;
+}
+
 /* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 480PX ------------------------------- */
 .recomendados__titulo {
   display: flex;
@@ -235,9 +283,6 @@ body {
 
 /* -------------------------------- INICIO RECOMENDADOS RESPONSIVE 1100PX ------------------------------- */
 @media (min-width: 1100px) {
-  .recomendados {
-    margin-left: 40px;
-  }
   .recomendados__titulo {
     margin: 20px 0;
     display: flex;
@@ -306,12 +351,12 @@ body {
 @media (min-width: 1100px) {
   .catalogo {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 2;
     grid-template-areas: "filtro recomendados" "filtro productos";
     justify-content: center;
     align-items: start;
-    gap: 20px;
+    gap: 5px;
   }
   .filtro {
     display: flex;
@@ -328,7 +373,6 @@ body {
     flex-direction: column;
     width: 250px;
     height: 670px;
-    margin-left: 20px;
     gap: 20px;
     background-color: #FFFFFF;
     -webkit-box-shadow: 8px 8px 5px -4px rgba(0, 0, 0, 0.9);
@@ -424,9 +468,6 @@ body {
   button {
     display: none;
   }
-  .productos {
-    margin-left: 40px;
-  }
   .productos__titulo {
     display: flex;
     justify-content: flex-start;
@@ -438,7 +479,6 @@ body {
     justify-content: center;
     gap: 10px;
     grid-area: productos;
-    width: 70vw;
   }
 }
 /* ---------------------- AVISO PROMOCIONES INICIO ------------------------ */
@@ -639,12 +679,13 @@ input[type=range].budget-slider::-moz-focus-outer {
   padding: 10px;
   margin: 0;
 }
-.tarjeta__img--zapatilla {
-  width: 120%;
+.tarjeta__img--yeezy {
+  width: 70%;
   height: auto;
-  padding: 10px;
-  margin: 0;
-  margin-bottom: 6px;
+}
+.tarjeta__img--nmd {
+  width: 70%;
+  height: auto;
 }
 .tarjeta__img--cadena {
   width: 55%;
@@ -688,21 +729,6 @@ input[type=range].budget-slider::-moz-focus-outer {
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
-.verano {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-}
-.verano__titulo {
-  font-size: 30px;
-}
-.verano hr {
-  margin-top: -5px;
-  width: 80%;
-}
-
 /* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
 .carrusel {
   display: flex;
@@ -714,22 +740,6 @@ input[type=range].budget-slider::-moz-focus-outer {
 }
 
 /* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
-.destacado {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-}
-.destacado__titulo {
-  font-size: 25px;
-  margin-top: 50px;
-}
-.destacado hr {
-  margin-top: -5px;
-  width: 80%;
-}
-
 .seccion {
   display: flex;
   flex-wrap: wrap;
@@ -770,21 +780,6 @@ input[type=range].budget-slider::-moz-focus-outer {
     height: 500px;
     width: auto;
   }
-}
-/* -------------------------------- PAGINA INDUMENTARIA ---------------------------------- */
-.titulo__promos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-}
-.titulo__promos h3 {
-  font-size: 25px;
-}
-.titulo__promos hr {
-  margin-top: 20px;
-  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

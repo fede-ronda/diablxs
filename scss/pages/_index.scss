@@ -1,21 +1,6 @@
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
 
-.verano {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
 
-    &__titulo {
-        font-size: 30px;
-    }
-
-    hr {
-        margin-top: -5px;
-        width: 80%;
-    }
-}
 
 /* ----------------------- TARJETAS PRODUCTOS CARRUSEL VERANO 2023 ------------------ */
 
@@ -32,23 +17,7 @@
 
 /* ----------------------------- PRODUCTOS INICIO ----------------------------------- */
 
-.destacado {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
 
-    &__titulo {
-        font-size: 25px;
-        margin-top: 50px;
-    }
-
-    hr {
-        margin-top: -5px;
-        width: 80%;
-    }
-}
 
 
 .seccion {
