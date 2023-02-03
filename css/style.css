@@ -330,8 +330,8 @@ body {
     margin-left: 20px;
     gap: 20px;
     background-color: #FFFFFF;
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 8px 8px 5px -4px rgba(0, 0, 0, 0.9);
+    box-shadow: 8px 8px 5px -4px rgba(0, 0, 0, 0.9);
   }
   .filtro__expandido span {
     font-size: 28px;
@@ -629,6 +629,8 @@ input[type=range].budget-slider::-moz-focus-outer {
   overflow: hidden;
   border-radius: 0px 0px 5px 5px;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 5px -4px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 8px 5px -4px rgba(0, 0, 0, 0.9);
 }
 .tarjeta__img {
   width: 70%;
@@ -661,8 +663,8 @@ input[type=range].budget-slider::-moz-focus-outer {
   margin-top: 5px;
 }
 .tarjeta:hover {
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 8px 5px -4px rgba(103, 58, 183, 0.9);
+  box-shadow: 0px 8px 5px -4px rgba(103, 58, 183, 0.9);
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */
