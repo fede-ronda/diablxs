@@ -26,6 +26,28 @@
         margin-bottom: 6px;
     }
 
+    &__img--cadena{
+        width: 55%;
+        height: auto;
+        padding: 10px;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+
+    &__img--riñonera{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 27px 0px;
+    }
+
+    &__img--reloj{
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        margin: 8px 0;
+    }
+
     h3 {
         border-bottom: 1px solid $color-gris;
         width: 100%;
