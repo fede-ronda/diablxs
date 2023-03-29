@@ -745,7 +745,8 @@ input[type=range].budget-slider::-moz-focus-outer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  margin: 0px 50px 0px 50px;
 }
 
 /* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
