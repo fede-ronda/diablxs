@@ -55,7 +55,21 @@ body {
   color: #FFFCF2;
 }
 .header__icons--carrito {
-  color: red;
+  display: flex;
+  gap: 0.5rem;
+  color: #FFFFFF;
+}
+.header__icons--carrito i:hover {
+  color: #673AB7;
+}
+.header__icons--carrito span {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  padding: 0 5px;
+  margin-left: 5px;
+  font-style: normal;
+  font-size: 12px;
+  color: #000000;
 }
 
 .nav {
@@ -811,6 +825,10 @@ input[type=range].budget-slider::-moz-focus-outer {
 }
 .carrito__acciones--comprar:hover {
   background-color: rgb(75, 179, 75);
+}
+
+.disabled {
+  display: none;
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */

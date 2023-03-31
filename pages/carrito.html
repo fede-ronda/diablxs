@@ -29,7 +29,9 @@
             <div class="header__icons">
                 <i class="bi bi-search"></i>
                 <i class="bi bi-person-fill"></i>
-                <a href="../pages/carrito.html"><i class="bi bi-cart-fill header__icons--carrito"></i></a>
+                <a class="header__icons--carrito" href="../pages/carrito.html">
+                    <i class="bi bi-cart-fill "><span class="numerito">0</span></i>
+                </a>
             </div>
 
         </div>
@@ -61,9 +63,9 @@
 
         <section class="carrito">
             <div class="carrito__vacio">
-                <p class="vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
+                <p class="vacio ">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
             </div>
-            <div class="carrito__productos">
+            <div class="carrito__productos disabled">
                 <div class="carrito__producto">
                     <img class="carrito__producto--img" src="../img/indumentaria/buzo-azul.png" alt="">
                     <div class="carrito__producto--nombre">
@@ -107,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="carrito__acciones">
+            <div class="carrito__acciones disabled">
                 <div class="carrito__acciones--izquierda">
                     <button class="carrito__acciones--vaciar">Vaciar carrito</button>
                 </div>
@@ -121,7 +123,7 @@
                 </div>
             </div>
 
-            <p class="comprado">Muchas gracias por tu compra <i class="bi bi-heart"></i></p>
+            <p class="comprado disabled">Muchas gracias por tu compra <i class="bi bi-heart"></i></p>
 
         </section>
 

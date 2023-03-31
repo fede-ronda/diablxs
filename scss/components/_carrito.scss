@@ -1,5 +1,5 @@
-.vacio, .comprado{
-}
+// .vacio, .comprado{
+// }
 
 .carrito {
     display: flex;
@@ -93,7 +93,8 @@
     }
 
 
-
 }
 
-
+.disabled {
+    display: none;
+}
