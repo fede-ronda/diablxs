@@ -22,6 +22,11 @@ ol {
   list-style: none;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -48,6 +53,9 @@ body {
   gap: 15px;
   font-size: 18px;
   color: #FFFCF2;
+}
+.header__icons--carrito {
+  color: red;
 }
 
 .nav {
@@ -80,6 +88,9 @@ body {
 
 /* -------------------------------- INICIO RESPONSIVE 480PX ------------------------------- */
 @media (min-width: 480px) {
+  .header__icons {
+    font-size: 25px;
+  }
   .nav__lista {
     display: flex;
     flex-direction: row;
@@ -368,6 +379,9 @@ body {
   .filtro__contenido {
     color: #000000;
   }
+  .filtro__contenido--boton {
+    display: none;
+  }
   .filtro__expandido {
     display: flex;
     flex-direction: column;
@@ -464,9 +478,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 5px;
-  }
-  button {
-    display: none;
   }
   .productos__titulo {
     display: flex;
@@ -726,6 +737,80 @@ input[type=range].budget-slider::-moz-focus-outer {
 .tarjeta:hover {
   -webkit-box-shadow: 0px 8px 5px -4px rgba(103, 58, 183, 0.9);
   box-shadow: 0px 8px 5px -4px rgba(103, 58, 183, 0.9);
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 90vw;
+  height: 90vh;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.carrito__productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.carrito__producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+}
+.carrito__producto--img {
+  width: 4rem;
+}
+.carrito__producto--nombre h3 {
+  margin-bottom: 0;
+}
+.carrito__producto--eliminar {
+  border: 0;
+  background-color: transparent;
+  color: rgb(255, 61, 61);
+}
+.carrito__acciones {
+  display: flex;
+  justify-content: space-between;
+}
+.carrito__acciones--vaciar {
+  border: 0;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.carrito__acciones--vaciar:hover {
+  background-color: rgb(255, 61, 61);
+  color: #FFFFFF;
+}
+.carrito__acciones--derecha {
+  display: flex;
+}
+.carrito__acciones--total {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.carrito__acciones--comprar {
+  border: 0;
+  background-color: #673AB7;
+  color: #FFFFFF;
+  padding: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.carrito__acciones--comprar:hover {
+  background-color: rgb(75, 179, 75);
 }
 
 /* ----------------------------------- PAGINA DE INICIO --------------------------------- */

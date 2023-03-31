@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="icon" href="../img/logo/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <meta name="description"
+        content="RELOJES, PULSERAS, COLLARES, ANILLOS EN ITUZAINGÓ| RETIRO EN TIENDA SIN CARGO | 3 CUOTAS SIN INTERÉS | 6 CUOTAS SIN INTERÉS EN COMPRAS SUPERIORES A $15.000">
+    <title>Accesorios Unisex | DIABLXZ Ituzaingó</title>
+</head>
+
+<body>
+    <!------------------------------ HEADER ------------------------------>
+
+    <header>
+        <div class="header">
+            <img class="header__logo" src="../img/logo/diablxs-logo.png" alt="logo blanco diablxs">
+            <div class="header__icons">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-person-fill"></i>
+                <a href="../pages/carrito.html"><i class="bi bi-cart-fill header__icons--carrito"></i></a>
+            </div>
+
+        </div>
+
+        <nav class="nav">
+            <ul class="nav__lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/indumentaria.html">Indumentaria</a></li>
+                <li><a href="../pages/calzado.html">Calzado</a></li>
+                <li><a href="../pages/accesorios.html">Accesorios</a></li>
+                <li><a href="../pages/promociones.html">Promos</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!----------------------------- INICIO MAIN -------------------------------->
+
+    <main>
+
+        <!----------------------- TITULO CARRITO ------------------------------>
+
+        <div class="titulo">
+            <h1>CARRITO</h1>
+            <hr>
+        </div>
+
+        <!------------------------ SECCION CARRITO ------------------------------>
+
+        <section class="carrito">
+            <div class="carrito__vacio">
+                <p class="vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
+            </div>
+            <div class="carrito__productos">
+                <div class="carrito__producto">
+                    <img class="carrito__producto--img" src="../img/indumentaria/buzo-azul.png" alt="">
+                    <div class="carrito__producto--nombre">
+                        <small>Título</small>
+                        <h3>Buzo 1</h3>
+                    </div>
+                    <div class="carrito__producto--cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito__producto--precio">
+                        <small>Precio</small>
+                        <p>$1000</p>
+                    </div>
+                    <div class="carrito__producto--subtotal">
+                        <small>Subtotal</small>
+                        <p>$1000</p>
+                    </div>
+                    <button class="carrito__producto--eliminar"><i class="bi bi-trash3-fill"></i></button>
+                </div>
+
+                <div class="carrito__producto">
+                    <img class="carrito__producto--img" src="../img/indumentaria/buzo-negro.png" alt="">
+                    <div class="carrito__producto--nombre">
+                        <small>Título</small>
+                        <h3>Buzo 2</h3>
+                    </div>
+                    <div class="carrito__producto--cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito__producto--precio">
+                        <small>Precio</small>
+                        <p>$1000</p>
+                    </div>
+                    <div class="carrito__producto--subtotal">
+                        <small>Subtotal</small>
+                        <p>$1000</p>
+                    </div>
+                    <button class="carrito__producto--eliminar"><i class="bi bi-trash3-fill"></i></button>
+                </div>
+            </div>
+
+            <div class="carrito__acciones">
+                <div class="carrito__acciones--izquierda">
+                    <button class="carrito__acciones--vaciar">Vaciar carrito</button>
+                </div>
+
+                <div class="carrito__acciones--derecha">
+                    <div class="carrito__acciones--total">
+                        <p>Total:</p>
+                        <p id="total">$2000</p>
+                    </div>
+                    <button class="carrito__acciones--comprar">Comprar</button>
+                </div>
+            </div>
+
+            <p class="comprado">Muchas gracias por tu compra <i class="bi bi-heart"></i></p>
+
+        </section>
+
+
+
+        <!--------------------- INICIO AVISO DE CUOTAS -------------------->
+
+        <section class="aviso">
+            <div class="aviso__cuotas">
+                <a href="../pages/promociones.html">
+                    <h4>3 cuotas sin interés</h4>
+                    <span>en todas tus compras</span>
+                </a>
+            </div>
+            <div class="aviso__cuotas">
+                <a href="../pages/promociones.html">
+                    <h4>6 cuotas sin interés</h4>
+                    <span>en compras superiores a $15.000</span>
+                </a>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+    <!----------------------------- FOOTER ---------------------------->
+
+    <footer>
+        <div class="newsletter">
+            <div class="newsletter__title">
+                <h5>SUSCRIBITE A NUESTRO <strong>NEWSLETTER</strong></h5>
+                <span>Recibí novedades y promociones antes que nadie</span>
+            </div>
+            <div class="newsletter__form">
+                <form action="">
+                    <div class="newsletter__email">
+                        <label for="email-usuario"></label>
+                        <input type="email" id="email-usuario" placeholder="Ingresá tu mail">
+                    </div>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__icons">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+            <div class="footer__lista">
+                <ul>
+                    <li><a href="">Locales</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="">Arrepentimiento de compra</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -88,12 +88,21 @@
         align-items: stretch;
         border-radius: 5px;
         grid-area: filtro;
+
+        &__contenido {
+            color: $color-negro;
+    
+            
+        }
+    
+        &__contenido--boton {
+            display: none;
+        }
     }
 
 
-    .filtro__contenido {
-        color: $color-negro;
-    }
+
+    
 
     .filtro__expandido {
         display: flex;
@@ -234,9 +243,7 @@
     }
 
 
-    button {
-        display: none;
-    }
+
 
 
 
