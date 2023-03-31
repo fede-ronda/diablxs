@@ -75,7 +75,7 @@ const ProductosArray = [
             nombre: "indumentaria",
             id: "indumentaria"
         },
-        precio: 5999
+        precio: 5999,
     },
 ];
 
@@ -110,5 +110,28 @@ CargarProductos();
 
 function ActualizarBotonesAgregar() {
     BotonesAgregar = document.querySelectorAll(".producto-agregar");
+
+    BotonesAgregar.forEach(boton => {
+        boton.addEventListener("click", AgregarAlCarrito);
+    });
+}
+
+const ProductosCarrito = [];
+
+function AgregarAlCarrito(e) {
+
+    const IdBoton = e.currentTarget.id;
+    const ProductoAgregado = ProductosArray.find(producto => producto.id === IdBoton);
+
+    if (ProductosCarrito.some(producto => producto.id === IdBoton)) {
+
+        const index = ProductosCarrito.findIndex(producto => producto.id === IdBoton);
+        ProductosCarrito[index].cantidad++;
+
+    } else {
+        ProductoAgregado.cantidad = 1;
+        ProductosCarrito.push(ProductoAgregado);
+    }
+
 }
 
