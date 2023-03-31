@@ -658,6 +658,7 @@ input[type=range].budget-slider::-moz-focus-outer {
   background: #000000;
   color: #FFFFFF;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .btn-comprar:hover {
